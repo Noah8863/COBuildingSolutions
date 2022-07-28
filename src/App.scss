@@ -30,6 +30,9 @@ th {
 td {
    background-color: rgb(196, 194, 194);
 }
+li {
+    font-size: x-large;
+}
 .gridStyle  {
     background-color: rgb(5, 2, 2);
 }
@@ -65,27 +68,23 @@ td {
     padding: 5px;
     background-color: rgb(23,119,203);
     color: #fff;
-    
 }
 .navbarList {
     position: relative;
     display: flex;
-    font-size: 20px;
-    bottom: 10px;
 }
-.rightnav {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    position: relative;
-    display: inline-block;
-}
+// .rightnav {
+//     font-size: 20px;
+//     text-decoration: none;
+//     color: white;
+//     position: relative;
+//     display: inline-block;
+// }
 
 nav {
     &.primary-navigation {
       margin: 0 auto;
-      display: block;
-      padding: 25px 0 0 0;  
+      display: block;  
       text-align: center;
       font-size: 16px;
   
@@ -492,4 +491,14 @@ $gray: #ffffff;
 #commerical {
     position: relative;
     left: 35%;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 530px) {
+    .navbarList {
+        display: none;
+    }
 }

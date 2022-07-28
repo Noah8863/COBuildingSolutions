@@ -40,6 +40,10 @@ td {
   background-color: #c4c2c2;
 }
 
+li {
+  font-size: x-large;
+}
+
 .gridStyle {
   background-color: #050202;
 }
@@ -86,22 +90,11 @@ td {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
-  bottom: 10px;
-}
-
-.rightnav {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-  position: relative;
-  display: inline-block;
 }
 
 nav.primary-navigation {
   margin: 0 auto;
   display: block;
-  padding: 25px 0 0 0;
   text-align: center;
   font-size: 16px;
 }
@@ -571,5 +564,15 @@ nav.primary-navigation ul li ul li a:hover {
 #commerical {
   position: relative;
   left: 35%;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 530px) {
+  .navbarList {
+    display: none;
+  }
 }
 /*# sourceMappingURL=App.css.map */

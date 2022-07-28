@@ -5,9 +5,9 @@ import solarPanel from '../images/solarPanel.jpg'
 
 function textInfo() {
     return (
-        <div>
+        <div className="hideInfo">
             <article className="roofblock">
-                <div className='rooftext'>
+                <div className="rooftext">
                     <h3> <strong>Roof Replacement</strong></h3>
                     <p>Looking for a reliable contractor with extensive experience for your next
                         project? At Colorado Building Solutions, we stand by the excellence of our work and provide clients with

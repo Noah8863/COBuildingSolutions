@@ -10,20 +10,20 @@ import './App.scss';
 function App() {
     return (
         <Router>
-            <NavBar />
             <Switch>
                 <Route exact path="/">
-                    <Carousel />
-                    <Info />
+                    <NavBar />
+                    {/* {/* <Carousel /> */}
+                    {/* <Info />  */}
                 </Route>
-                <Route exact path="/quote">
+                {/* <Route exact path="/quote">
                     <Quote />
                 </Route>
                 <Route exact path="/lumber">
                     <Lumber />
-                </Route>
+                </Route> */}
             </Switch>
-            <Footer />
+            {/* <Footer /> */}
         </Router>
     )
 }
