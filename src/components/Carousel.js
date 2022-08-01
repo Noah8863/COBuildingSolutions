@@ -1,48 +1,63 @@
 import React from 'react'
+import { useState } from 'react'
 import images from '../images'
-import Slider from 'react-touch-drag-slider'
 
-import styled, { createGlobalStyle } from 'styled-components'
-
-
+const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+const delay = 2500;
 
 function Carousel() {
+  const [index, setIndex] = React.useState(0);
+  const timeoutRef = React.useRef(null);
 
-    const GlobalStyles = createGlobalStyle`
-    * {
-      box-sizing: border-box;
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
     }
-    html,body {
-      padding: 0;
-      margin: 0;
-    }
-  `
-    // The slider will fit any size container, lets go full screen...
-    const AppStyles = styled.main`
-    
-    height:100vh;
-    width:100vw;
-    margin-top: 20%;
-  `
+  }
 
+  React.useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
 
-    return (
-        <div className="imageContainer">
-            <GlobalStyles />
-            <AppStyles>
-                <Slider
-                    activeIndex={0}
-                    threshHold={100}
-                    transition={0.6}
-                    scaleOnDrag={true}
-                >
-                    {images.map(({ image, title }, index) => (
-                        <img src={image} key={index} alt={title} />
-                    ))}
-                </Slider>
-            </AppStyles>
-        </div>
-    )
-};
+    return () => {
+      resetTimeout();
+    };
+  }, [index]);
+
+  return (
+    <div className="slideshow">
+      <div
+        className="slideshowSlider"
+        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+      >
+        {colors.map((backgroundColor, index) => (
+          <div
+            className="slide"
+            key={index}
+            style={{ backgroundColor }}
+          ></div>
+        ))}
+      </div>
+
+      <div className="slideshowDots">
+        {colors.map((_, idx) => (
+          <div
+            key={idx}
+            className={`slideshowDot${index === idx ? " active" : ""}`}
+            onClick={() => {
+              setIndex(idx);
+            }}
+          ></div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default Carousel;

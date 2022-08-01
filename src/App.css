@@ -154,6 +154,44 @@ nav.primary-navigation ul li ul li a:hover {
   transition: all 0.3s ease;
 }
 
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 500px;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  -webkit-transition: ease 1000ms;
+  transition: ease 1000ms;
+}
+
+.slide {
+  display: inline-block;
+  height: 400px;
+  width: 100%;
+  border-radius: 40px;
+}
+
+/* Buttons */
+.slideshowDots {
+  text-align: center;
+}
+
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 15px 7px 0px;
+  background-color: #c4c4c4;
+}
+
+.slideshowDot.active {
+  background-color: #6a0dad;
+}
+
 #quote {
   margin-right: 10px;
   margin-left: 10px;
@@ -569,10 +607,10 @@ nav.primary-navigation ul li ul li a:hover {
     display: block;
   }
   #addressContainer {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   #infoContainer {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=App.css.map */

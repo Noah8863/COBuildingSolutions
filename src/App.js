@@ -10,18 +10,18 @@ import './App.scss';
 function App() {
     return (
         <Router>
+            <NavBar />
             <Switch>
                 <Route exact path="/">
-                    <NavBar />
-                    {/* <Carousel /> */}
-                    {/* <Info />  */}
+                    <Carousel /> 
+                    <Info /> 
                 </Route>
-                {/* <Route exact path="/quote">
+                 <Route exact path="/quote">
                     <Quote />
                 </Route>
                 <Route exact path="/lumber">
                     <Lumber />
-                </Route> */}
+                </Route> 
             </Switch>
             <Footer />
         </Router>
