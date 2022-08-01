@@ -51,10 +51,7 @@ li {
     top: 30%;
     color: white;
 }
-.imageContainer {
-    width: 40%;
-    height: 100%;
-}
+
 #logo {
     position: relative;
     margin-top:25px;
@@ -73,21 +70,12 @@ li {
     position: relative;
     display: flex;
 }
-// .rightnav {
-//     font-size: 20px;
-//     text-decoration: none;
-//     color: white;
-//     position: relative;
-//     display: inline-block;
-// }
 
 nav {
     &.primary-navigation {
       margin: 0 auto;
       display: block;  
       text-align: center;
-      font-size: 16px;
-  
       ul li {
         list-style: none;
         margin: 0 auto;
@@ -211,32 +199,6 @@ nav {
     font-size: 20px;
     padding: 20px;
     text-align:center;
-}
-#creator {
-    position: relative;
-    top: 80px;
-    padding: 10px;
-    text-align: center;
-    background-color:white;
-}
-.contactInfo {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    text-align: center;
-    justify-content: center;
-}
-#infoContainer{
-    padding-left: 120px;
-    padding-right: 120px;
-}
-#contactContainer {
-    padding-left: 0px;
-    padding-right: 90px;
-}
-#infoContainer {
-    padding-left: 90px;
-    padding-right: 0px;
 }
 
 .inputfield {
@@ -388,7 +350,22 @@ $gray: #ffffff;
     height: 250px;
     background-color: rgb(71, 70, 70);
     color: white;
+    text-align: center;
 }
+.contactInfo {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+#creator {
+    width: 100%;
+    position: relative;
+    top: 80px;
+    padding: 10px;
+    text-align: center;
+    background-color:white;
+}
+
 .wrapper {
     display: inline-flex;
     list-style: none;
@@ -427,7 +404,6 @@ $gray: #ffffff;
   
 .wrapper .tooltip::before {
     position: absolute;
-    content: "";
     height: 8px;
     width: 8px;
     background: #ffffff;
@@ -468,7 +444,6 @@ $gray: #ffffff;
   color: #ffffff;
 }
 
-
 .wrapper .homefacebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
@@ -497,8 +472,34 @@ $gray: #ffffff;
     display: none;
 }
 
+@media (max-width: 600px) {
+    .wrapper .icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width:550px) {
+    .footer {
+        font-size: small;
+    }
+}
+
 @media (max-width: 530px) {
     .navbarList {
         display: none;
     }
+}
+@media (max-width:440px) {
+    .contactInfo {
+        display:block;
+    }
+    #addressContainer {
+        margin-bottom:15px;
+    }
+    #infoContainer {
+        margin-bottom:15px;
+    }
+    
+
 }

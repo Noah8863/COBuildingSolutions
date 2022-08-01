@@ -13,7 +13,7 @@ function App() {
             <Switch>
                 <Route exact path="/">
                     <NavBar />
-                    {/* {/* <Carousel /> */}
+                    {/* <Carousel /> */}
                     {/* <Info />  */}
                 </Route>
                 {/* <Route exact path="/quote">
@@ -23,7 +23,7 @@ function App() {
                     <Lumber />
                 </Route> */}
             </Switch>
-            {/* <Footer /> */}
+            <Footer />
         </Router>
     )
 }

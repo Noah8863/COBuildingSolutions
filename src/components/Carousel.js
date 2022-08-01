@@ -1,6 +1,7 @@
 import React from 'react'
-import Slider from 'react-touch-drag-slider'
 import images from '../images'
+import Slider from 'react-touch-drag-slider'
+
 import styled, { createGlobalStyle } from 'styled-components'
 
 

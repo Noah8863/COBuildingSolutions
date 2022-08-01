@@ -35,7 +35,7 @@ export default function Footer() {
         <div className="footer">
             <div className="contactInfo">
                 <div id="addressContainer">
-                    <h3>Address</h3>
+                    <h3>Address </h3> 
                     <p>1630 W Evans Ave, Unit C</p>
                     <p>Englewood, CO 80110</p>
                     <p>USA</p>
