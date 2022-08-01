@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../images/logo.jpg';
 import { Link } from 'react-router-dom';
 // import { HashLink } from 'react-router-hash-link'
@@ -6,12 +6,12 @@ import HamburgerButton from './Hamburger'
 
 export default function NavBar() {
     return (
+        
         <div>
             <img src={logo} id="logo" alt="logo" />
-
             <div className="nav">
                 <nav role="navigation" className='navbar primary-navigation'>
-                <HamburgerButton />
+                
                     <ul className="navbarList">
                         <li>
                             <Link className="dropbtn" to="/">Home</Link>
@@ -23,8 +23,8 @@ export default function NavBar() {
                         <li >
                             <Link className="dropbtn" to="/roofing">Roofing</Link>
                             <ul className="dropdown">
-                                <li><a>Commerical</a></li>
-                                <li><a>Residentinal</a></li>
+                                <li className="roofLinks"><a>Commerical</a></li>
+                                <li className="roofLinks"><a>Residentinal</a></li>
                             </ul>
                         </li>
 

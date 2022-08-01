@@ -13,11 +13,11 @@ export default function HamburgerButton() {
 
     return (
         <AppStyles>
+            <h1 className="test1">Hello</h1>
             <Hamburger className="hamburgerBtn" size={30} onToggle={toggled => {
                 if (toggled) {
-                    const test1 = document.getElementById('test1');
+                    const test1 = document.getElementsByClassName('test1');
                     test1.classList.add('hide');
-
                 } else {
                     // close a menu
                 }
