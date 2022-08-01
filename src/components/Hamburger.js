@@ -11,8 +11,6 @@ export default function HamburgerButton() {
         }
     `
 
-
-
     return (
         <AppStyles>
             <Hamburger className="hamburgerBtn" size={30} onToggle={toggled => {

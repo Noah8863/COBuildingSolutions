@@ -14,13 +14,13 @@ function textInfo() {
                         personalized attention based on their specific needs. If you’re looking for professional Roof
                         Replacement services, please get in touch for your consultation.</p>
                 </div>
-                <div className="landingPagePictures">
-                    <img src={roofPicture} alt=""/>
+                <div>
+                    <img className="roofImage" src={roofPicture} alt=""/>
                 </div>
             </article>
             <article className="skylightblock">
-                <div className="landingPagePictures">
-                    <img src={skylightPicture} alt=""/>
+                <div>
+                    <img className="skylightImage" src={skylightPicture} alt=""/>
                 </div>
                 <div className="skylightText">
                     <h3>SkyLight Installation </h3>
@@ -38,8 +38,8 @@ function textInfo() {
                         all guaranteed to meet and exceed expectations. Contact our office today to learn more about this and
                         our other available services.</p>
                 </div>
-                <div className="landingPagePictures">
-                    <img src={solarPanel} alt="" />
+                <div>
+                    <img className="solarImage" src={solarPanel} alt="" />
                 </div>
             </article>
         </div>

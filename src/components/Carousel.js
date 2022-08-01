@@ -1,8 +1,10 @@
 import React from 'react'
-import { useState } from 'react'
-import images from '../images'
+import img1 from '../images/lumberCutPic.jpeg'
+import img2 from '../images/roofing.jpg'
+import img3 from '../images/skylight.jpg'
 
-const colors = ["#0088FE", "#00C49F", "#FFBB28"];
+
+const colors = [img1, img2, img3];
 const delay = 2500;
 
 function Carousel() {
@@ -37,11 +39,11 @@ function Carousel() {
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {colors.map((backgroundColor, index) => (
-          <div
+          <img
             className="slide"
             key={index}
-            style={{ backgroundColor }}
-          ></div>
+            src={{ backgroundColor }}
+          ></img>
         ))}
       </div>
 

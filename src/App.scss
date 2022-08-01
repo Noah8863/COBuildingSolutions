@@ -137,34 +137,34 @@ nav {
     }
   }
 
-// ====== Carousel Styles ====== //
+/* Slideshow */
 
 .slideshow {
     margin: 0 auto;
     overflow: hidden;
     max-width: 500px;
-}
+  }
   
-.slideshowSlider {
+  .slideshowSlider {
     white-space: nowrap;
     transition: ease 1000ms;
-}
+  }
   
-.slide {
+  .slide {
     display: inline-block;
   
     height: 400px;
     width: 100%;
     border-radius: 40px;
-}
+  }
   
   /* Buttons */
   
-.slideshowDots {
+  .slideshowDots {
     text-align: center;
-}
+  }
   
-.slideshowDot {
+  .slideshowDot {
     display: inline-block;
     height: 20px;
     width: 20px;
@@ -177,7 +177,7 @@ nav {
 }
   
 .slideshowDot.active {
-    background-color: #6a0dad;
+    background-color: #000000;
 }
 
 
@@ -530,6 +530,28 @@ $gray: #ffffff;
     .navbarList {
         display: none;
     }
+    .roofblock {
+    display: block;
+    height: 530px;
+    }
+    .skylightblock {
+        display: block;
+        height: 530px;
+    }
+    .skylightImage {
+        position: relative;
+        top: 300px;
+    }
+    .skylightText{
+        position: absolute;
+        top: 780px;
+    }
+    .solarblock {
+        display: block;
+        height: 530px;
+    }
+
+    
 }
 @media (max-width:440px) {
     .contactInfo {

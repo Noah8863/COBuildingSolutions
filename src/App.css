@@ -154,6 +154,7 @@ nav.primary-navigation ul li ul li a:hover {
   transition: all 0.3s ease;
 }
 
+/* Slideshow */
 .slideshow {
   margin: 0 auto;
   overflow: hidden;
@@ -189,7 +190,7 @@ nav.primary-navigation ul li ul li a:hover {
 }
 
 .slideshowDot.active {
-  background-color: #6a0dad;
+  background-color: #000000;
 }
 
 #quote {
@@ -599,6 +600,26 @@ nav.primary-navigation ul li ul li a:hover {
 @media (max-width: 530px) {
   .navbarList {
     display: none;
+  }
+  .roofblock {
+    display: block;
+    height: 530px;
+  }
+  .skylightblock {
+    display: block;
+    height: 530px;
+  }
+  .skylightImage {
+    position: relative;
+    top: 300px;
+  }
+  .skylightText {
+    position: absolute;
+    top: 780px;
+  }
+  .solarblock {
+    display: block;
+    height: 530px;
   }
 }
 
