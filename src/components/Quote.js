@@ -1,58 +1,90 @@
 import React from 'react'
-
+import emailjs from '@emailjs/browser'
 
 function Quote() {
+
+    const sendEmail = (e) => {
+        var today= new Date().toLocaleDateString();
+        
+        e.preventDefault();
+        const formData = {
+            time: today,
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            phoneNumber: document.getElementById('phoneNumber').value,
+            lumber: document.getElementById('lumber').checked ? "Yes ✅" : "No ❌",
+            plywood: document.getElementById('plywood').checked ? "Yes ✅" : "No ❌",
+            osb: document.getElementById('osb').checked ? "Yes ✅" : "No ❌",
+            lsl: document.getElementById('lsl').checked ? "Yes ✅" : "No ❌",
+            subject: document.getElementById('subject').value,
+            message: document.getElementById('message').value
+
+        }
+        console.log(formData)
+        emailjs.send('service_32wky28', 'template_s77x9a4', formData, 'nIOQ4DjOD6VPrQRy0')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
     return (
         <div>
-            <div className="inputfield">
-                <form className="nameform field">
-                    <input type="input" className="form__field" placeholder="Name" name="name" id='name' required />
-                    <label className="form__label">Full Name</label>
-                </form>
+            <form onSubmit={sendEmail} className="inputfield">
+                <div>
+                    <div className="nameform field">
+                        <input type="text" className="form__field" placeholder="Name" name="name" id='name' required />
+                        <label className="form__label">Full Name</label>
+                    </div>
 
-                <form className="emailform field">
-                    <input type="input" className="form__field" placeholder="Email" name="email" id='email' required />
-                    <label className="form__label">Email</label>
-                </form>
+                    <div className="emailform field">
+                        <input type="text" className="form__field" placeholder="Email" name="email" id='email' required />
+                        <label className="form__label">Email</label>
+                    </div>
 
-                <form className="emailform field">
-                    <input type="input" className="form__field" placeholder="Phone Number" name="email" id='email' required />
-                    <label className="form__label">Phone Number</label>
-                </form>
+                    <div className="emailform field">
+                        <input type="number" className="form__field" placeholder="Phone Number" name="phoneNumber" id='phoneNumber' required />
+                        <label className="form__label">Phone Number</label>
+                    </div>
 
-                <form className="checkboxform field">
-                    <h4>Products of Interest*</h4>
-                    <label>
-                        <input type="checkbox" className="checkboxOptions" />
-                        Lumber
-                    </label>
-                    <label>
-                        <input type="checkbox" className="checkboxOptions" />
-                        Plywood/Veneer
-                    </label>
-                    <label>
-                        <input type="checkbox" className="checkboxOptions" />
-                        OSB
-                    </label> 
-                    <label>
-                        <input type="checkbox" className="checkboxOptions" />
-                        LSL
-                    </label>
-                </form>
-                <form className="subjectform field">
-                    <input type="input" className="form__field" placeholder="Subject" name="subject" id='subject' required />
-                    <label className="form__label">Subject</label>
-                </form>
+                    <div className="checkboxform field">
+                        <h4>Products of Interest*</h4>
+                        <label>
+                            <input type="checkbox" className="checkboxOptions" id="lumber" />
+                            Lumber
+                        </label>
+                        <label>
+                            <input type="checkbox" className="checkboxOptions" id="plywood" />
+                            Plywood/Veneer
+                        </label>
+                        <label>
+                            <input type="checkbox" className="checkboxOptions" id="osb" />
+                            OSB
+                        </label>
+                        <label>
+                            <input type="checkbox" className="checkboxOptions" id="lsl" />
+                            LSL
+                        </label>
+                    </div>
 
-                <div className="subjectform">
-                    <h4 style={{ color: 'white' }}>Your Message/Comments *</h4>
-                    <textarea className="messageTextArea"></textarea>
+                    <div className="subjectform field">
+                        <input type="text" className="form__field" placeholder="Subject" name="subject" id='subject' required />
+                        <label className="form__label">Subject</label>
+                    </div>
+
+                    <div className="subjectform">
+                        <h4 style={{ color: 'white' }}>Your Message/Comments *</h4>
+                        <textarea className="messageTextArea" name="message" id="message" ></textarea>
+                    </div>
+                    <div className="colxs12">
+                            <button type="submit" className="btnlrg submitbtn">Send Message</button>
+                    </div>
                 </div>
+            </form>
 
-            </div>
-            
         </div>
     )
 }
 
 export default Quote;
+
