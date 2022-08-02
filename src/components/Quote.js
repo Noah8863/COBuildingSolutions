@@ -4,8 +4,8 @@ import emailjs from '@emailjs/browser'
 function Quote() {
 
     const sendEmail = (e) => {
-        var today= new Date().toLocaleDateString();
-        
+        var today = new Date().toLocaleDateString();
+
         e.preventDefault();
         const formData = {
             time: today,
@@ -31,7 +31,6 @@ function Quote() {
     return (
         <div>
             <form onSubmit={sendEmail} className="inputfield">
-                <div>
                     <div className="nameform field">
                         <input type="text" className="form__field" placeholder="Name" name="name" id='name' required />
                         <label className="form__label">Full Name</label>
@@ -76,12 +75,11 @@ function Quote() {
                         <h4 style={{ color: 'white' }}>Your Message/Comments *</h4>
                         <textarea className="messageTextArea" name="message" id="message" ></textarea>
                     </div>
-                    <div className="colxs12">
-                            <button type="submit" className="btnlrg submitbtn">Send Message</button>
+                    
+                    <div class="btn-1">
+                        <a href=""alt="button"><span tyoe="submit">Submit</span></a>
                     </div>
-                </div>
             </form>
-
         </div>
     )
 }
