@@ -13,7 +13,7 @@ function App() {
             <NavBar />
             <Switch>
                 <Route exact path="/">
-                    {/* <Carousel />  */}
+                    <Carousel /> 
                     <Info /> 
                 </Route>
                  <Route exact path="/quote">

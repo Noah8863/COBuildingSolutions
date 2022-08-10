@@ -77,7 +77,7 @@ function Quote() {
                     </div>
                     
                     <div class="btn-1">
-                        <a href=""alt="button"><span tyoe="submit">Submit</span></a>
+                        <a href=""alt="button"><span type="submit">Submit</span></a>
                     </div>
             </form>
         </div>
