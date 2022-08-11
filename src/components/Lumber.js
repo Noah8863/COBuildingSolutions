@@ -20,7 +20,7 @@ function lumber() {
     return (
         <main>
             <img className="lumberPic" src={img} />
-        <Paper>
+        <Paper className="gridStyle">
             <Grid className="gridStyle"
                 rows={rows}
                 columns={columns}
