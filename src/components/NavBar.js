@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import logo from '../images/logo.jpg';
 import { Link } from 'react-router-dom';
 // import { HashLink } from 'react-router-hash-link'
-import HamburgerButton from './Hamburger'
 
 export default function NavBar() {
     return (

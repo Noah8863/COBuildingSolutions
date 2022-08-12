@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ff091e2c.css",
+    "main.js": "/static/js/main.d1864056.js",
+    "static/media/constructionPic.jpg": "/static/media/constructionPic.d90e59c5e3ea7153e792.jpg",
+    "static/media/lumberPicture2.jpeg": "/static/media/lumberPicture2.fa8c599e992c650dcf4e.jpeg",
+    "static/media/roofingInstallPic.jpeg": "/static/media/roofingInstallPic.fb5e47d8424347abad88.jpeg",
+    "static/media/skylight.jpg": "/static/media/skylight.b1a2955919fb1c4e5b7c.jpg",
+    "static/media/lumberCutPic.jpeg": "/static/media/lumberCutPic.b88864e7eef408894a77.jpeg",
+    "static/media/solarPanel.jpg": "/static/media/solarPanel.cd7647cd04089103177c.jpg",
+    "static/media/constructionPic2.jpeg": "/static/media/constructionPic2.392183488ae77716a908.jpeg",
+    "static/media/roofingInstallPic.jpg": "/static/media/roofingInstallPic.bd0e2e68740a2bebdb4d.jpg",
+    "static/media/roofing.jpg": "/static/media/roofing.807e0b0b57812cb4ce2f.jpg",
+    "static/media/logo.jpg": "/static/media/logo.7531977701066c3f8155.jpg",
+    "index.html": "/index.html",
+    "main.ff091e2c.css.map": "/static/css/main.ff091e2c.css.map",
+    "main.d1864056.js.map": "/static/js/main.d1864056.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff091e2c.css",
+    "static/js/main.d1864056.js"
+  ]
+}
