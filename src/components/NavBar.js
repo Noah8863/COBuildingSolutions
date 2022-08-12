@@ -22,8 +22,8 @@ export default function NavBar() {
                         <li >
                             <Link className="dropbtn" to="/roofing">Roofing</Link>
                             <ul className="dropdown">
-                                <li className="roofLinks"><a>Commerical</a></li>
-                                <li className="roofLinks"><a>Residentinal</a></li>
+                                <li className="roofLinks">Commerical</li>
+                                <li className="roofLinks">Residentinal</li>
                             </ul>
                         </li>
 
@@ -36,23 +36,3 @@ export default function NavBar() {
         </div>
     )
 }
-
-
-
-
-
-{/* <nav role="navigation" className="primary-navigation">
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Work &dtrif;</a>
-            <ul className="dropdown">
-                <li><a href="#">Web Development</a></li>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Illustration</a></li>
-                <li><a href="#">Iconography</a></li>
-            </ul>
-        </li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav> */}
