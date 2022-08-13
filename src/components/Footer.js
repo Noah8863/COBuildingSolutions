@@ -39,6 +39,8 @@ export default function Footer() {
                     <p>1630 W Evans Ave, Unit C</p>
                     <p>Englewood, CO 80110</p>
                     <p>USA</p>
+                    <h4>Office Hours</h4>
+                    <p>8:00am - 3:00pm</p>
                 </div>
                 <div id="infoContainer">
                     <h3>Contact</h3>

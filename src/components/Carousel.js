@@ -1,10 +1,10 @@
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
+import { Navigation } from "swiper";
 
 import "swiper/css";
-import "swiper/css/pagination";
+// import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import img1 from '../images/housePic.jpg'
@@ -23,14 +23,14 @@ function Carousel() {
   return (
     <>
       <Swiper
-        pagination={{
-          type: "fraction",
-        }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide className="swiper-slide"><img src={img1} alt={img1} /></SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <img src={img1} alt={img1} />
+          <h1>Residentinal</h1>
+        </SwiperSlide>
         <SwiperSlide className="swiper-slide"><img src={img2} alt={img2} /></SwiperSlide>
         <SwiperSlide className="swiper-slide"><img src={img3} alt={img3} /></SwiperSlide>
         <SwiperSlide className="swiper-slide"><img src={img4} alt={img4} /></SwiperSlide>

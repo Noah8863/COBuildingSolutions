@@ -22,8 +22,8 @@ export default function NavBar() {
                         <li >
                             <Link className="dropbtn" to="/roofing">Roofing</Link>
                             <ul className="dropdown">
-                                <li className="roofLinks">Commerical</li>
-                                <li className="roofLinks">Residentinal</li>
+                                <li className="roofLinks"><a>Commerical</a></li>
+                                <li className="roofLinks"><a>Residentinal</a></li>
                             </ul>
                         </li>
 

@@ -5,7 +5,7 @@ import solarPanel from '../images/solarPanel.jpg'
 
 function textInfo() {
     return (
-        <div className="hideInfo">
+        <div>
             <article className="roofblock">
                 <div className="rooftext">
                     <h3> <strong>Roof Replacement</strong></h3>
