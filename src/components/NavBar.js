@@ -27,7 +27,7 @@ export default function NavBar() {
                                     <Link to="/commerical">Commerical</Link>
                                 </li>
                                 <li className="roofLinks">
-                                    <Link to="/residential">Residentinal</Link>
+                                    <Link to="/residential">Residential</Link>
                                 </li>
                             </ul>
                         </li>

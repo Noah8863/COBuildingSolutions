@@ -76,7 +76,7 @@ function Quote() {
                         <textarea className="messageTextArea" name="message" id="message" ></textarea>
                     </div>
                     
-                    <div class="btn-1">
+                    <div className="btn-1">
                         <a href=" " alt="button"><span type="submit">Submit</span></a>
                     </div>
             </form>

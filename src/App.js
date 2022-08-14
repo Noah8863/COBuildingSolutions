@@ -5,6 +5,8 @@ import Lumber from './components/Lumber'
 import Carousel from './components/Carousel'
 import Info from './components/textInfo'
 import Footer from './components/Footer'
+import Commerical from './components/CommericalPage'
+import Residential from './components/ResidentialPage'
 import './App.scss';
 
 function App() {
@@ -23,10 +25,10 @@ function App() {
                     <Lumber />
                 </Route>
                 <Route exact path="/commerical">
-                
+                    <Commerical />
                 </Route> 
                 <Route exact path="/residential">
-                    
+                    <Residential />
                 </Route>
             </Switch>
             <Footer />

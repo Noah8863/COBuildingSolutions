@@ -107,6 +107,13 @@ $gray: #ffffff;
 #roofNav {
   color: black;
 }
+#contactBtn {
+  width: 210px;
+  height: 60px;
+  background-color: #2f97f1;
+  
+}
+
 
 nav {
     &.primary-navigation {
@@ -221,53 +228,54 @@ nav {
 // ====== Quote page styles ===== //
 
 .inputfield {
-    padding: 20px;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 8%;
-    margin-right: 8%;
-    width: auto;
-    height: 100%;
-    background-color: rgb(23,119,203);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+  width: auto;
+  height: 100%;
+  background-color: rgb(23,119,203);
 }
 .nameform { 
+  position: relative;
+  margin-left: 20%;
+  
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 50%;
+}
+.emailform {
   position: relative;
   padding: 15px 0 0;
   margin-top: 10px;
   margin-left: 20%;
   width: 50%;
 }
-.emailform {
-    position: relative;
-    padding: 15px 0 0;
-    margin-top: 10px;
-    margin-left: 20%;
-    width: 50%;
-}
 .checkboxform {
-    display: grid;
-    position: relative;
-    padding: 15px 0 0;
-    margin-top: 10px;
-    margin-left: 20%;
-    width: 50%;
-    color: $gray;
+  display: grid;
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  margin-left: 20%;
+  width: 50%;
+  color: $gray;
 }
 .messageTextArea {
-    position: relative;
-    width: 100%;
-    height:150px;
+  position: relative;
+  width: 100%;
+  height:150px;
 }
 .checkboxOptions{
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
 }
 .subjectform {
-    position: relative;
-    padding: 15px 0 0;
-    margin-top: 10px;
-    margin-left: 20%;
-    width: 50%;
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  margin-left: 20%;
+  width: 50%;
+  text-align: center;
 }
 
 .slide {
@@ -359,13 +367,14 @@ nav {
   position: relative;
   margin: auto;
   top: 20px;
-  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer a,
 .btn-1 a {
-  text-decoration: none;
-  
+  text-decoration: none; 
   padding: 15px;
   color: #000;
   text-transform: uppercase;
@@ -373,8 +382,6 @@ footer a,
   position: relative;
   display: inline-block;
 }
-
-/* Button 1 styles */
 
 .btn-1 a::before {
   content: "";
@@ -403,7 +410,6 @@ footer a,
   transition: all 0.5s ease-in-out;
   transform: scaleX(1);
 }
-
 
 .btn-1 a:hover::after {
   transform: scaleX(0);
@@ -562,6 +568,11 @@ footer a,
     .swiper-slide img {
       width: 100%;
       height: auto;
+    }
+    .inputfield {
+      margin-left: 0%;
+      margin-right: 0%;
+      margin-bottom: 1%;
     }
 }
 
