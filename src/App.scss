@@ -9,13 +9,12 @@ html {
 body { 
     font-family: 'Varta', sans-serif;
     background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
 }
 a {
 text-decoration: none;
 }
-img {
-  max-width: 100%;
-}
+
 table, th, td {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -31,7 +30,7 @@ td {
    background-color: rgb(196, 194, 194);
 }
 li {
-    font-size: x-large;
+    font-size: larger;
 }
 
 $primary: #c6def1;
@@ -39,10 +38,7 @@ $secondary: #2196F3;
 $white: #000000;
 $gray: #ffffff;
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
+
 
 .swiper-slide {
   text-align: center;
@@ -65,8 +61,8 @@ $gray: #ffffff;
 }
 
 .swiper-slide img {
-  width: 700px;
-  height: 400px;
+  width: 100%;
+  height: 500px;
 }
 
 .hide {
@@ -169,40 +165,38 @@ nav {
 
 // ====== Info Stles ====== //
 
-.roofblock {
-    display: grid;
-    grid-template-columns: 60% auto;
-    margin: 20px;
-}
-.rooftext {
-    margin:auto;
-    font-size: 20px;
-    padding: 20px;
-    text-align:center;
-}
-.skylightblock {
-    display: grid;
-    grid-template-columns: 40% auto;
-    margin: 20px;
-}
-.skylightText {
-    margin: auto;
-    font-size: 20px;
-    padding: 20px;
-    text-align:center;
-}
-.solarblock {
-    display: grid;
-    grid-template-columns: 60% auto;
-    margin: 20px;
-}
-.solarText {
-    margin: auto;
-    font-size: 20px;
-    padding: 20px;
-    text-align:center;
+
+
+main {
+	margin: 0 auto;
+	padding: .875em .5em;
+	max-width: 32em;
+	background: whitesmoke;
+	font: 1.25em/ 1.375 segoe script, comic sans ms, cursive;
+	* + * { margin-top: 1.375em }
 }
 
+.banner {
+	margin-left: calc(50% - 50vw);
+	width: 100vw; height: 37.5vmin;
+	min-height: 15em;
+	background: linear-gradient(#000, transparent, #000), 
+	var(--img) 50%/ cover;
+	background-attachment: fixed;
+	background-blend-mode: multiply;
+	
+	&:nth-of-type(1) {
+		--img: url('./images/housePic.jpg');
+	}
+	
+	&:nth-of-type(2) {
+		--img: url('./images/lumberYard.jpg');
+	}
+	
+	&:nth-of-type(3) {
+		--img: url('./images/commericalRoofing.jpg');
+	}
+}
 
 // ====== Quote page styles ===== //
 

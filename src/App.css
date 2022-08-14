@@ -12,14 +12,11 @@ html {
 body {
   font-family: 'Varta', sans-serif;
   background-color: white;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
-}
-
-img {
-  max-width: 100%;
 }
 
 table, th, td {
@@ -41,12 +38,7 @@ td {
 }
 
 li {
-  font-size: x-large;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
+  font-size: larger;
 }
 
 .swiper-slide {
@@ -72,8 +64,8 @@ li {
 }
 
 .swiper-slide img {
-  width: 700px;
-  height: 400px;
+  width: 100%;
+  height: 500px;
 }
 
 .hide {
@@ -178,49 +170,39 @@ nav.primary-navigation ul li ul li a:hover {
   transition: all 0.3s ease;
 }
 
-.roofblock {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 60% auto;
-      grid-template-columns: 60% auto;
-  margin: 20px;
+main {
+  margin: 0 auto;
+  padding: .875em .5em;
+  max-width: 32em;
+  background: whitesmoke;
+  font: 1.25em/ 1.375 segoe script, comic sans ms, cursive;
 }
 
-.rooftext {
-  margin: auto;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
+main * + * {
+  margin-top: 1.375em;
 }
 
-.skylightblock {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40% auto;
-      grid-template-columns: 40% auto;
-  margin: 20px;
+.banner {
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+  height: 37.5vmin;
+  min-height: 15em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(transparent), to(#000)), var(--img) 50%/cover;
+  background: linear-gradient(#000, transparent, #000), var(--img) 50%/cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
 }
 
-.skylightText {
-  margin: auto;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
+.banner:nth-of-type(1) {
+  --img: url('./images/housePic.jpg');
 }
 
-.solarblock {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 60% auto;
-      grid-template-columns: 60% auto;
-  margin: 20px;
+.banner:nth-of-type(2) {
+  --img: url('./images/lumberYard.jpg');
 }
 
-.solarText {
-  margin: auto;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
+.banner:nth-of-type(3) {
+  --img: url('./images/commericalRoofing.jpg');
 }
 
 .inputfield {
