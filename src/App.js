@@ -13,7 +13,7 @@ function App() {
             <NavBar />
             <Switch>
                 <Route exact path="/">
-                    {/* <Carousel />  */}
+                    <Carousel /> 
                     <Info /> 
                 </Route>
                  <Route exact path="/quote">
@@ -21,7 +21,13 @@ function App() {
                 </Route>
                 <Route exact path="/lumber">
                     <Lumber />
+                </Route>
+                <Route exact path="/commerical">
+                
                 </Route> 
+                <Route exact path="/residential">
+                    
+                </Route>
             </Switch>
             <Footer />
         </Router>

@@ -48,6 +48,11 @@ li {
   font-size: larger;
 }
 
+span {
+  position: relative;
+  z-index: 3;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -109,6 +114,10 @@ li {
 
 .dropdown {
   z-index: 2;
+}
+
+#roofNav {
+  color: black;
 }
 
 nav.primary-navigation {
@@ -410,11 +419,6 @@ footer a,
   display: inline-block;
 }
 
-span {
-  position: relative;
-  z-index: 3;
-}
-
 /* Button 1 styles */
 .btn-1 a::before {
   content: "";
@@ -455,18 +459,8 @@ span {
 }
 
 .lumberPic {
-  width: 60%;
-  height: 60%;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
+  width: 100%;
   margin-top: 20px;
-}
-
-.gridStyle {
-  display: hide;
 }
 
 .footer {
@@ -619,7 +613,6 @@ span {
   }
   .lumberPic {
     width: 100%;
-    height: 100%;
   }
   .swiper-slide img {
     width: auto;
@@ -627,6 +620,10 @@ span {
   }
   main {
     max-width: 100%;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
   }
 }
 

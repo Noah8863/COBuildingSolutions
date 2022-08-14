@@ -21,10 +21,14 @@ export default function NavBar() {
                         </li>
 
                         <li >
-                            <Link className="dropbtn" to="/roofing">Roofing</Link>
+                            <div className="dropbtn" id="roofNav" to="/roofing">Roofing</div>
                             <ul className="dropdown">
-                                <li className="roofLinks"><a>Commerical</a></li>
-                                <li className="roofLinks"><a>Residentinal</a></li>
+                                <li className="roofLinks">
+                                    <Link to="/commerical">Commerical</Link>
+                                </li>
+                                <li className="roofLinks">
+                                    <Link to="/residential">Residentinal</Link>
+                                </li>
                             </ul>
                         </li>
 

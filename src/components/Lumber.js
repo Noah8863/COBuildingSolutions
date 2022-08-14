@@ -16,19 +16,18 @@ const rows = [
 
 
 function lumber() {
-    
     return (
         <main>
             <img className="lumberPic" src={img} alt={img} />
-        <Paper className="gridStyle">
-            <Grid className="gridStyle"
-                rows={rows}
-                columns={columns}
-            >
-                <Table />
-                <TableHeaderRow />
-            </Grid>
-        </Paper>
+            <Paper className="gridStyle">
+                <Grid className="gridStyle"
+                    rows={rows}
+                    columns={columns}
+                >
+                    <Table />
+                    <TableHeaderRow />
+                </Grid>
+            </Paper>
         </main>
     )
 }

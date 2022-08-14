@@ -36,6 +36,10 @@ td {
 li {
     font-size: larger;
 }
+span {
+  position: relative;
+  z-index: 3;
+}
 
 
 $primary: #c6def1;
@@ -71,15 +75,15 @@ $gray: #ffffff;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 #logo {
-    position: relative;
-    margin-top:25px;
-    margin-left: 10px;
-    width: 200px;
-    height: 120px;
+  position: relative;
+  margin-top:25px;
+  margin-left: 10px;
+  width: 200px;
+  height: 120px;
 }
 
 .navbar {
@@ -99,6 +103,9 @@ $gray: #ffffff;
 }
 .dropdown {
   z-index: 2;
+}
+#roofNav {
+  color: black;
 }
 
 nav {
@@ -367,11 +374,6 @@ footer a,
   display: inline-block;
 }
 
-span {
-  position: relative;
-  z-index: 3;
-}
-
 /* Button 1 styles */
 
 .btn-1 a::before {
@@ -381,7 +383,6 @@ span {
   left: -2px;
   width: calc(100% + 6px);
   height: calc(100% - 10px);
-  
   transition: all 0.5s ease-in-out;
   transform: scaleY(1);
 }
@@ -411,86 +412,80 @@ span {
 // ====== Lumber Page ====== //
 
 .lumberPic {
-  width: 60%;
-  height: 60%;
-  position: relative;
-  display: flex;
-  margin: auto;
+  width: 100%;
   margin-top: 20px;
 }
-.gridStyle {
-  display: hide;
-}
+
 
 // ====== Footer ====== //
 
 
 .footer {
-    width: 100%;
-    height: auto;
-    background-color: rgb(71, 70, 70);
-    color: white;
-    text-align: center;
+  width: 100%;
+  height: auto;
+  background-color: rgb(71, 70, 70);
+  color: white;
+  text-align: center;
 }
 .contactInfo {
-    display: grid;
-    grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
     
 }
 #creator {
-    width: auto;
-    position: relative;
-    top: 20px;
-    padding: 10px;
-    text-align: center;
-    background-color:rgb(207, 206, 206);
+  width: auto;
+  position: relative;
+  top: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color:rgb(207, 206, 206);
 }
 
 .wrapper {
-    display: inline-flex;
-    list-style: none;
+  display: inline-flex;
+  list-style: none;
 }
   
 .wrapper .icon {
-    position: relative;
-    background: rgb(71, 70, 70);
-    border-radius: 50%;
-    padding: 15px;
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+  background: rgb(71, 70, 70);
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .wrapper .tooltip {
-    position: absolute;
-    top: 0;
-    font-size: 14px;
-    background: #ffffff;
-    color: #000000;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #000000;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
   
 .wrapper .tooltip::before {
-    position: absolute;
-    height: 8px;
-    width: 8px;
-    background: #ffffff;
-    bottom: -3px;
-    left: 50%;
-    transform: translate(-50%) rotate(45deg);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
   
 .wrapper .icon:hover .tooltip {
@@ -556,7 +551,6 @@ span {
     }
     .lumberPic {
       width: 100%;
-      height: 100%;
     }
     .swiper-slide img {
       width: auto;
@@ -564,6 +558,10 @@ span {
     }
     main {
       max-width: 100%;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
     }
 }
 
