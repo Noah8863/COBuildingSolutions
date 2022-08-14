@@ -1,15 +1,19 @@
-html {
-    scroll-behavior: smooth;
-}
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Varta', sans-serif;
+}
+main {
+	margin: 0 auto;
+	padding: .875em .5em;
+	max-width: 60%;
+	* + * { margin-top: 2.375em }
 }
 body { 
-    font-family: 'Varta', sans-serif;
-    background-color: rgb(255, 255, 255);
-    overflow-x: hidden;
+  font-family: 'Varta', sans-serif;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
 }
 a {
 text-decoration: none;
@@ -32,6 +36,7 @@ td {
 li {
     font-size: larger;
 }
+
 
 $primary: #c6def1;
 $secondary: #2196F3;
@@ -76,17 +81,18 @@ $gray: #ffffff;
     width: 200px;
     height: 120px;
 }
+
 .navbar {
   top: 10px;
   margin-top: 15px;
   padding: 5px;
-  background-color: rgb(23,119,203);
+  background-color: #1777cb;
   color: #fff;
 }
 .navbarList {
   position: relative;
   display: flex;
-  
+  color: #fff;
 }
 .roofLinks {
   font-size: large;
@@ -114,7 +120,7 @@ nav {
       }
   
       li a {
-        color: rgb(0, 0, 0);
+        color: rgb(15, 15, 15);
       }
   
       li a:hover {
@@ -164,18 +170,25 @@ nav {
 
 
 // ====== Info Stles ====== //
-
-
-
-main {
-	margin: 0 auto;
-	padding: .875em .5em;
-	max-width: 32em;
-	background: whitesmoke;
-	font: 1.25em/ 1.375 segoe script, comic sans ms, cursive;
-	* + * { margin-top: 1.375em }
+.infoArea {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  text-align: center;
 }
-
+.infoText {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+.infoAreaTitles {
+  color: #1777cb;
+  text-align: center;
+}
+.divider {
+  border-bottom: 3px solid black !important;
+  margin-top: 10px;
+  
+}
 .banner {
 	margin-left: calc(50% - 50vw);
 	width: 100vw; height: 37.5vmin;
@@ -548,6 +561,9 @@ span {
     .swiper-slide img {
       width: auto;
       height: auto;
+    }
+    main {
+      max-width: 100%;
     }
 }
 

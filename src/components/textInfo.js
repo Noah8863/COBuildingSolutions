@@ -2,18 +2,18 @@ import React from 'react'
 
 function textInfo() {
     return (
-        <main>
+        <main className='infoArea'>
+            <h2 className='infoAreaTitles'>WHO WE ARE</h2>
+            <p className='infoText'>Colorado Building Solutions serves as a leading contractor in the greater Denver and surrounding areas. We’re a team of fully-certified professionals who tackle everything from complex large projects to smaller scale jobs.Fueled by our commitment to excellence, we go the extra mile to make sure clients are completely satisfied with our work. Call us today to schedule a consultation. </p>
             <div class='banner'></div>
-            <p>Candy sesame snaps bear claw cookie. Tart marzipan dessert gummies. Marzipan dragée wafer croissant cake. Biscuit muffin carrot cake.</p>
-            <p>Fruitcake donut icing gummi bears. Donut cake jujubes wafer chocolate bar cotton candy carrot cake. Bear claw tart sweet powder cake. Gummies ice cream dessert cupcake pudding jelly-o.</p>
+            <h2 className='infoAreaTitles'>Roof Replacement</h2>
+            <p className='infoText'>Looking for a reliable contractor with extensive experience for your next project? At Colorado Building Solutions, we stand by the excellence of our work and provide clients with personalized attention based on their specific needs. If you’re looking for professional Roof Replacement services, please get in touch for your consultation.</p>
             <div class='banner'></div>
-            <p>Marshmallow cupcake marzipan topping tootsie roll jelly-o cake liquorice. Toffee cotton candy danish tiramisu bonbon caramels liquorice halvah. Biscuit donut bear claw chupa chups pudding biscuit powder sweet roll donut. Tart candy canes marzipan.</p>
-            <p>Sugar plum pastry bonbon danish apple pie. Cookie cheesecake candy canes chocolate powder dessert fruitcake jelly. Powder halvah sweet sugar plum lollipop.</p>
-            <p>Powder bonbon chocolate caramels cheesecake soufflé. Cake icing icing ice cream pudding jelly carrot cake ice cream tiramisu. Candy canes wafer marzipan pie chocolate bar dessert jujubes. Biscuit oat cake donut icing brownie.</p>
+            <h2 className='infoAreaTitles'>Lumber</h2>
+            <p className='infoText'>Colorado Building Solutions provides a variety of lumber ranging from OSB, OSB Tongue and Groove, Pylowood, and traditional lumber. We sell by the bunk and are a commerical whole seller. </p>
             <div class='banner'></div>
-            <p>Dragée marzipan lollipop sesame snaps chocolate bar toffee jelly. Croissant cupcake sesame snaps tiramisu gummi bears ice cream sugar plum cotton candy. Soufflé cake gummi bears muffin soufflé soufflé marshmallow macaroon. Caramels caramels lemon drops.</p>
-            <p>Croissant oat cake cake. Cheesecake liquorice muffin chocolate cake candy canes powder muffin tiramisu. Candy canes donut jelly beans jelly beans cotton candy jelly beans muffin. Candy apple pie dessert soufflé tiramisu.</p>
-            
+            <h2 className='infoAreaTitles'>About Us</h2>
+            <p className='infoText'>Colorado Building Solutions was founded back in 2020 and is based out of Englewood Colorado. We have partnerships with Nova Incorporations and take pride in all of our services we provide.</p>
         </main>
     )
 }

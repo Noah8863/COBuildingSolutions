@@ -37,6 +37,7 @@ function Carousel() {
         <SwiperSlide className="swiper-slide"><img src={img5} alt={img5} /></SwiperSlide>
         <SwiperSlide className="swiper-slide"><img src={img6} alt={img6} /></SwiperSlide>
       </Swiper>
+      <div className="divider"></div>
     </>
   );
 }

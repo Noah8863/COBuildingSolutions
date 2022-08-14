@@ -8,6 +8,7 @@ export default function NavBar() {
         
         <div>
             <img src={logo} id="logo" alt="logo" />
+            
             <div className="nav">
                 <nav role="navigation" className='navbar primary-navigation'>
                 
