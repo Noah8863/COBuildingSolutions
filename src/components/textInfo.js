@@ -5,7 +5,7 @@ function textInfo() {
     return (
         <main className='infoArea'>
             <h2 className='infoAreaTitles'>WHO WE ARE</h2>
-            <p className='infoText'>Colorado Building Solutions serves as a leading commercial and residential roofing company, along with a commercial lumber division in the greater Denver and surrounding areas. We’re a team of fully-certified professionals who tackle everything from complex large projects to smaller scale jobs.Fueled by our commitment to excellence, we go the extra mile to make sure clients are completely satisfied with our work. Call us today to schedule a consultation. </p>
+            <p className='infoText'>Colorado Building Solutions serves as a leading commercial and residential roofing company, along with a commercial lumber division in the greater Denver and surrounding areas. We’re a team of fully-certified professionals who tackle everything from complex large projects to smaller scale jobs. Fueled by our commitment to excellence, we go the extra mile to make sure clients are completely satisfied with our work. Call us today to schedule a consultation. </p>
             <Link to='/quote'><button class="learn-more">
                 <span class="circle" aria-hidden="true">
                     <span class="icon arrow"></span>

@@ -41,7 +41,6 @@ span {
   z-index: 3;
 }
 
-
 $primary: #c6def1;
 $secondary: #2196F3;
 $white: #000000;
@@ -209,8 +208,6 @@ nav {
         position: relative;
         text-decoration: none;
         text-align: center;
-        font-family: arvo;
-        
       }
   
       li a {
@@ -218,7 +215,7 @@ nav {
       }
   
       li a:hover {
-        color: #3ca0e7;
+        color: #d1d1d1;
       }
   
       li:hover {
@@ -243,7 +240,7 @@ nav {
         min-width: 250px;
         text-align: left;
         padding-top: 20px;
-        box-shadow: 0px 3px 5px -1px #ccc;
+        box-shadow: 0px 3px 5px -1px rgb(255, 255, 255);
       }
   
       ul li ul li {
@@ -264,6 +261,7 @@ nav {
 
 
 // ====== Info Stles ====== //
+
 .infoArea {
   margin-top: 40px;
   margin-bottom: 10px;
@@ -501,7 +499,10 @@ footer a,
   width: 100%;
   margin-top: 20px;
 }
+.lumberPage-section * {
+  font-family: 'Alumni Sans Pinstripe'
 
+}
 
 // ====== Footer ====== //
 

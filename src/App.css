@@ -96,7 +96,7 @@ span {
   top: 10px;
   margin-top: 15px;
   padding: 5px;
-  background-color: #1777cb;
+  background-color: #2196F3;
   color: #fff;
 }
 
@@ -120,10 +120,98 @@ span {
   color: black;
 }
 
-#contactBtn {
-  width: 210px;
-  height: 60px;
-  background-color: #2f97f1;
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #2196F3;
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: '';
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  -webkit-transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #2196F3;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  -webkit-transform: translate(1rem, 0);
+          transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #fff;
 }
 
 nav.primary-navigation {
@@ -141,7 +229,6 @@ nav.primary-navigation ul li {
   position: relative;
   text-decoration: none;
   text-align: center;
-  font-family: arvo;
 }
 
 nav.primary-navigation li a {
@@ -149,7 +236,7 @@ nav.primary-navigation li a {
 }
 
 nav.primary-navigation li a:hover {
-  color: #3ca0e7;
+  color: #d1d1d1;
 }
 
 nav.primary-navigation li:hover {
@@ -174,8 +261,8 @@ nav.primary-navigation ul li ul:hover {
   min-width: 250px;
   text-align: left;
   padding-top: 20px;
-  -webkit-box-shadow: 0px 3px 5px -1px #ccc;
-          box-shadow: 0px 3px 5px -1px #ccc;
+  -webkit-box-shadow: 0px 3px 5px -1px white;
+          box-shadow: 0px 3px 5px -1px white;
 }
 
 nav.primary-navigation ul li ul li {
@@ -206,7 +293,7 @@ nav.primary-navigation ul li ul li a:hover {
 }
 
 .infoAreaTitles {
-  color: #1777cb;
+  color: #2196F3;
   text-align: center;
 }
 
@@ -335,7 +422,7 @@ nav.primary-navigation ul li ul li a:hover {
   border-bottom: 2px solid #ffffff;
   outline: 0;
   font-size: 1.3rem;
-  color: #000000;
+  color: #fff;
   padding: 7px 0;
   background: transparent;
   -webkit-transition: border-color 0.2s;
@@ -470,6 +557,10 @@ footer a,
 .lumberPic {
   width: 100%;
   margin-top: 20px;
+}
+
+.lumberPage-section * {
+  font-family: 'Alumni Sans Pinstripe';
 }
 
 .footer {
