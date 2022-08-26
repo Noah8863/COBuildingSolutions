@@ -3,7 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Varta', sans-serif;
+  font-family: 'Alumni Sans Pinstripe';
 }
 
 a {
@@ -549,7 +549,6 @@ footer a,
 }
 
 .lumberPageText-section * {
-  font-family: 'Alumni Sans Pinstripe';
   text-align: center;
 }
 
@@ -563,11 +562,12 @@ footer a,
   font-size: 1px;
 }
 
-.container {
+.residentialContainer {
   text-align: center;
+  color: #2196F3;
 }
 
-.container::after {
+.residentialContainer::after {
   content: "";
   clear: both;
   display: table;
@@ -782,6 +782,19 @@ footer a,
     margin-right: 0%;
     margin-bottom: 1%;
   }
+  .residentialContainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .images {
+    width: 200px;
+    height: 230px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -850,14 +863,20 @@ footer a,
   #infoContainer {
     margin-bottom: 20px;
   }
+  .images {
+    width: 180px;
+    height: 220px;
+  }
 }
 
 @media (max-width: 300px) {
   .feedbackContainter {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
+    display: inline;
+    text-align: center;
+  }
+  .feedbackContainter p {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=App.css.map */

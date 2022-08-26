@@ -8,7 +8,7 @@ $white: #fff;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Varta', sans-serif;
+  font-family: 'Alumni Sans Pinstripe';
 }
 
 a {
@@ -493,7 +493,6 @@ footer a,
   left: 10%;
 }
 .lumberPageText-section * {
-  font-family: 'Alumni Sans Pinstripe';
   text-align: center;
 }
 .gridStyle {
@@ -507,10 +506,11 @@ footer a,
 
 // ====== Residential Page ====== //
 
-.container{
+.residentialContainer{
   text-align: center;
+  color: $secondary;
 }
-.container::after {
+.residentialContainer::after {
   content: "";
   clear: both;
   display: table;
@@ -705,11 +705,20 @@ footer a,
       margin-right: 0%;
       margin-bottom: 1%;
     }
+    .residentialContainer{
+      display:grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+    }
+    .images{
+      width: 200px;
+      height: 230px;
+    }
 }
 
 @media (max-width:550px) {
     .footer {
-        font-size: small;
+      font-size: small;
     }
 }
 
@@ -765,18 +774,26 @@ footer a,
 }
 @media (max-width:440px) {
     .contactInfo {
-        display:block;
+      display:block;
     }
     #addressContainer {
-        margin-bottom:20px;
+      margin-bottom:20px;
     }
     #infoContainer {
-        margin-bottom:20px;
+      margin-bottom:20px;
+    }
+    .images{
+      width: 180px;
+      height: 220px;
     }
 }
 @media (max-width: 300px){
   .feedbackContainter {
-    display: grid;
-    grid-template-columns: auto auto;
+    display:inline;
+    text-align: center;
+  }
+  .feedbackContainter p {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
