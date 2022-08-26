@@ -22,10 +22,7 @@ function Commerical() {
                     modules={[Navigation]}
                     className="mySwiper"
                 >
-                    <SwiperSlide className="swiper-slide">
-                        <img src={img1} alt={img1} />
-
-                    </SwiperSlide>
+                    <SwiperSlide className="swiper-slide"><img src={img1} alt={img1} /></SwiperSlide>
                     <SwiperSlide className="swiper-slide"><img src={img2} alt={img2} /></SwiperSlide>
                     <SwiperSlide className="swiper-slide"><img src={img3} alt={img3} /></SwiperSlide>
                     <SwiperSlide className="swiper-slide"><img src={img4} alt={img4} /></SwiperSlide>

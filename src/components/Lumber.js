@@ -19,15 +19,12 @@ function lumber() {
     return (
         <main>
             <img className="lumberPic" src={img} alt={img} />
-            <section className="lumberPage-section">
-            <h1>Lumber Built On Values</h1>
-            <p>When you work with Colorado Building Solutions, you get more than high-quality lumber. We are dedicated to outstanding customer service to make sure our customers feel understood and that all their needs are met. </p>
+            <section className="lumberPageText-section">
+                <h1>Lumber Built On Values</h1>
+                <p>When you work with Colorado Building Solutions, you get more than high-quality lumber. We are dedicated to outstanding customer service to make sure our customers feel understood and that all their needs are met. </p>
             </section>
             <Paper className="gridStyle">
-                <Grid className="gridStyle"
-                    rows={rows}
-                    columns={columns}
-                >
+                <Grid rows={rows} columns={columns}>
                     <Table />
                     <TableHeaderRow />
                 </Grid>

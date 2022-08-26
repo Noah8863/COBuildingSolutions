@@ -1,50 +1,41 @@
+$primary: #c6def1;
+$secondary: #2196F3;
+$gray: #ffffff;
+$bg: #f3f8fa;
+$white: #fff;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Varta', sans-serif;
 }
-main {
-	margin: 0 auto;
-	padding: .875em .5em;
-	max-width: 60%;
-	* + * { margin-top: 2.375em }
-}
-body { 
-  font-family: 'Varta', sans-serif;
-  background-color: rgb(255, 255, 255);
-  overflow-x: hidden;
-}
+
 a {
 text-decoration: none;
 }
-
 table, th, td {
-    margin-top: 5%;
-    margin-bottom: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 table, td {
-    border:1px solid black;
-    padding: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 1px;
 }
 th {
-    background-color: #1777cb;
+  background-color: $secondary;
 }
 td {
-   background-color: rgb(196, 194, 194);
+  background-color: rgb(255, 255, 255);
 }
 li {
-    font-size: larger;
+  font-size: larger;
 }
 span {
   position: relative;
   z-index: 3;
 }
-
-$primary: #c6def1;
-$secondary: #2196F3;
-$white: #000000;
-$gray: #ffffff;
 
 .swiper-slide {
   text-align: center;
@@ -79,8 +70,8 @@ $gray: #ffffff;
   position: relative;
   margin-top:25px;
   margin-left: 10px;
-  width: 200px;
-  height: 120px;
+  width: 240px;
+  height: 160px;
 }
 
 .navbar {
@@ -104,8 +95,6 @@ $gray: #ffffff;
 #roofNav {
   color: black;
 }
-$bg: #f3f8fa;
-$white: #fff;
 
 @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
   transition: $property $duration $ease;
@@ -125,6 +114,7 @@ button {
   &.learn-more {
     width: 12rem;
     height: auto;
+    margin-bottom: 20px;
     .circle {
       @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
       position: relative;
@@ -496,13 +486,76 @@ footer a,
 // ====== Lumber Page ====== //
 
 .lumberPic {
-  width: 100%;
+  position: relative;
+  width: 80%;
+  margin-top: 5%;
+  margin-bottom: 20px;
+  left: 10%;
+}
+.lumberPageText-section * {
+  font-family: 'Alumni Sans Pinstripe';
+  text-align: center;
+}
+.gridStyle {
+  position: relative;
+  margin: auto;
+  width: 80%;
+}
+.gridText {
+  font-size: 1px;
+}
+
+// ====== Residential Page ====== //
+
+.container{
+  text-align: center;
+}
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.images {
+  width: 90%;
+  height: 500px;
+}
+.residentialTextContainer{
+  text-align:center;
   margin-top: 20px;
 }
-.lumberPage-section * {
-  font-family: 'Alumni Sans Pinstripe'
-
+.residentialHeaders {
+  text-align:center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: $secondary;
 }
+#feedBackHeader {
+  position: relative;
+  color: $secondary;
+  text-align: center;
+  margin-top: 50px;
+}
+.feedbackContainter {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+// .images:hover { 
+//   animation-timing-function: linear;
+//   transform: scale(1.2); 
+// }
+
+// ====== Commerical Page ====== //
 
 // ====== Footer ====== //
 
@@ -636,9 +689,6 @@ footer a,
       width: 30px;
       height: 30px;
     }
-    .lumberPic {
-      width: 100%;
-    }
     .swiper-slide img {
       width: auto;
       height: auto;
@@ -687,22 +737,30 @@ footer a,
         display: block;
         height: 530px;
     }
+    .lumberPic {
+      width: 100%;
+      left: 0%;
+    }
 }
 @media (max-width:470px){
     .navbarList {
-        position: relative;
-        display: block;
+      position: relative;
+      display: block;
     }
     nav {
-        &.primary-navigation {
-          ul li {
-            border-left: 0px;  
-            }
+      &.primary-navigation {
+        ul li {
+          border-left: 0px;  
         }
+      }
     }
     .dropbtn {
-        padding: 0px;
-        
+      padding: 0px;
+    }
+    #logo {
+      justify-content: center;
+      width: 150px;
+      height: 100px;
     }
 }
 @media (max-width:440px) {
@@ -716,4 +774,9 @@ footer a,
         margin-bottom:20px;
     }
 }
-
+@media (max-width: 300px){
+  .feedbackContainter {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
