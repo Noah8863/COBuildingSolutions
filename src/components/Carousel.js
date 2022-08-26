@@ -1,5 +1,4 @@
 import React from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 
@@ -12,10 +11,6 @@ import img3 from '../images/lumberLabor.jpg'
 import img4 from '../images/manOnRoof.jpg'
 import img5 from '../images/roofingHouse.jpg'
 import img6 from '../images/haulingLumber.jpg'
-// import img7 from '../images/'
-// import img8 from '../images/'
-
-
 
 function Carousel() {
 
@@ -36,7 +31,7 @@ function Carousel() {
         <SwiperSlide className="swiper-slide"><img src={img5} alt={img5} /></SwiperSlide>
         <SwiperSlide className="swiper-slide"><img src={img6} alt={img6} /></SwiperSlide>
       </Swiper>
-      <div className="divider"></div>
+      
     </>
   );
 }

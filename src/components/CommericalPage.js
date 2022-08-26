@@ -1,9 +1,4 @@
 import React from 'react'
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
-
-import "swiper/css";
-import "swiper/css/navigation";
 
 import img1 from '../images/commerical1.jpg'
 import img2 from '../images/commerical2.jpg'
@@ -46,17 +41,12 @@ function Commerical() {
             </div>
             <h1 id="feedBackHeader">FEEDBACK</h1>
             <div className="feedbackContainter">
-                
                 <p>“If you’re looking for a reliable, efficient, and trustworthy contractor, you’ve definitely come to the right place. Colorado Building Solutions is the absolute best and really knows how to deliver. You won’t be let down!” 
                 </p>
                 
-
-                
                 <p>“I was very impressed at how the final result turned out. The team at Colorado Building Solutions is really talented, with the skills and expertise to get the job done right. Highly recommended!”</p>
 
-                
                 <p>“I’m so happy I chose to work with Colorado Building Solutions. From the initial consultation all the way through the project’s conclusion, the service I received was impeccable and the end result really brought my vision to life.”</p>
-
             </div>
         </main>
     )

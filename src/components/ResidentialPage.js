@@ -1,6 +1,4 @@
 import React from 'react'
-import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
-
 import img1 from '../images/homePt1.jpg'
 import img2 from '../images/homePt2.jpg'
 import img3 from '../images/homePt3.jpg'

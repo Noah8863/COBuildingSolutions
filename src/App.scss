@@ -258,19 +258,18 @@ nav {
   text-align: center;
 }
 .infoText {
+  font-size: 18px;
+  width: 80%;
+  margin: auto;
   margin-top: 20px;
   margin-bottom: 40px;
-  font-size: 18px;
 }
 .infoAreaTitles {
   color: $secondary;
   text-align: center;
+  margin-top: 20px;
 }
-.divider {
-  border-bottom: 3px solid black !important;
-  margin-top: 10px;
-  
-}
+
 .banner {
 	margin-left: calc(50% - 50vw);
 	width: 100vw; height: 37.5vmin;
@@ -289,7 +288,7 @@ nav {
 	}
 	
 	&:nth-of-type(3) {
-		--img: url('./images/commericalRoofing.jpg');
+		--img: url('./images/skyscraper.jpg');
 	}
 }
 
@@ -504,7 +503,7 @@ footer a,
   font-size: 1px;
 }
 
-// ====== Residential Page ====== //
+// ====== Residential/Commerical Pages ====== //
 
 .Container{
   text-align: center;
@@ -550,16 +549,16 @@ footer a,
   margin-left: 5%;
   margin-right: 5%;
 }
-// .images:hover { 
-//   animation-timing-function: linear;
-//   transform: scale(1.2); 
-// }
 
-// ====== Commerical Page ====== //
+
 
 // ====== Footer ====== //
-
-
+.footerHeaders {
+  margin-bottom: 10px;
+}
+#officeHours {
+  margin-top: 20px;
+}
 .footer {
   width: 100%;
   height: auto;
@@ -680,8 +679,6 @@ footer a,
 }
 
 
-
-
 // ====== Responsive styles ======= //
 
 @media (max-width: 600px) {
@@ -754,12 +751,16 @@ footer a,
 @media (max-width:470px){
     .navbarList {
       position: relative;
-      display: block;
+      display:grid;
     }
     nav {
       &.primary-navigation {
         ul li {
-          border-left: 0px;  
+          border-left: 0px;
+          margin-top: 3px;
+          margin-bottom: 3px;  
+          border-bottom: 1px solid #000000;
+          
         }
       }
     }

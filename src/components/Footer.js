@@ -35,21 +35,21 @@ export default function Footer() {
         <div className="footer">
             <div className="contactInfo">
                 <div id="addressContainer">
-                    <h3>Address </h3> 
+                    <h3 className="footerHeaders">Address</h3> 
                     <p>1630 W Evans Ave, Unit C</p>
                     <p>Englewood, CO 80110</p>
                     <p>USA</p>
-                    <h4>Office Hours</h4>
+                    <h4 id="officeHours">Office Hours</h4>
                     <p>8:00am - 3:00pm</p>
                 </div>
                 <div id="infoContainer">
-                    <h3>Contact</h3>
+                    <h3 className="footerHeaders">Contact</h3>
                     <p>Cobuildingsolutions@gmail.com</p>
                     <p>Gschendel@cobuildingsolutions.com</p>
                     <p>(720) 607-6890</p>
                 </div>
                 <div id="contactContainer">
-                    <h3>More About Us</h3>
+                    <h3 className="footerHeaders">More About Us</h3>
                     <ul className="wrapper">
                         {links.map((link) => (
                             <a key={link.id} href={link.link} target="_blank" rel="noreferrer" style={{ color: "white" }}>

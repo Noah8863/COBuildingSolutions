@@ -1,14 +1,12 @@
 import React from 'react';
 import logo from '../images/logo.jpg';
 import { Link } from 'react-router-dom';
-// import { HashLink } from 'react-router-hash-link'
 
 export default function NavBar() {
     return (
         
         <div>
             <img src={logo} id="logo" alt="logo" />
-            
             <div className="nav">
                 <nav role="navigation" className='navbar primary-navigation'>
                 

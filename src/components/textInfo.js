@@ -13,16 +13,15 @@ function textInfo() {
                 <span className="button-text">Contact Us</span>
             </button></Link>
             <div className='banner'></div>
-            <h2 className='infoAreaTitles'>Roof Replacement</h2>
+            <h2 className='infoAreaTitles'>ROOF REPLACEMENT</h2>
             <p className='infoText'>Looking for a reliable contractor with extensive experience for your next project? At Colorado Building Solutions, we stand by the excellence of our work and provide clients with personalized attention based on their specific needs. If you’re looking for professional Roof Replacement services, please get in touch for your consultation.</p>
             <div className='banner'></div>
-            <h2 className='infoAreaTitles'>Lumber</h2>
+            <h2 className='infoAreaTitles'>LUMBER</h2>
             <p className='infoText'>Colorado Building Solutions provides a variety of lumber ranging from OSB, OSB Tongue and Groove, Pylowood, and traditional lumber. We sell by the bunk and are a commerical whole seller. </p>
             <div className='banner'></div>
-            <h2 className='infoAreaTitles'>About Us</h2>
+            <h2 className='infoAreaTitles'>ABOUT US</h2>
             <p className='infoText'>Colorado Building Solutions was founded back in 2020 and is based out of Englewood Colorado. We have partnerships with Nova Incorporations and take pride in all of our services we provide.</p>
         </main>
-
     )
 }
 

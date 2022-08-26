@@ -273,19 +273,17 @@ nav.primary-navigation ul li ul li a:hover {
 }
 
 .infoText {
+  font-size: 18px;
+  width: 80%;
+  margin: auto;
   margin-top: 20px;
   margin-bottom: 40px;
-  font-size: 18px;
 }
 
 .infoAreaTitles {
   color: #2196F3;
   text-align: center;
-}
-
-.divider {
-  border-bottom: 3px solid black !important;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .banner {
@@ -308,7 +306,7 @@ nav.primary-navigation ul li ul li a:hover {
 }
 
 .banner:nth-of-type(3) {
-  --img: url('./images/commericalRoofing.jpg');
+  --img: url('./images/skyscraper.jpg');
 }
 
 .inputfield {
@@ -618,6 +616,14 @@ footer a,
   margin-right: 5%;
 }
 
+.footerHeaders {
+  margin-bottom: 10px;
+}
+
+#officeHours {
+  margin-top: 20px;
+}
+
 .footer {
   width: 100%;
   height: auto;
@@ -836,10 +842,14 @@ footer a,
 @media (max-width: 470px) {
   .navbarList {
     position: relative;
-    display: block;
+    display: -ms-grid;
+    display: grid;
   }
   nav.primary-navigation ul li {
     border-left: 0px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #000000;
   }
   .dropbtn {
     padding: 0px;
