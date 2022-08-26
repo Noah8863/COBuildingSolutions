@@ -506,11 +506,11 @@ footer a,
 
 // ====== Residential Page ====== //
 
-.residentialContainer{
+.Container{
   text-align: center;
   color: $secondary;
 }
-.residentialContainer::after {
+.Container::after {
   content: "";
   clear: both;
   display: table;
@@ -524,11 +524,11 @@ footer a,
   width: 90%;
   height: 500px;
 }
-.residentialTextContainer{
+.TextContainer{
   text-align:center;
   margin-top: 20px;
 }
-.residentialHeaders {
+.Headers {
   text-align:center;
   margin-top: 20px;
   margin-bottom: 30px;

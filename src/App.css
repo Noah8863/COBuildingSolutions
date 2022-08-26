@@ -562,12 +562,12 @@ footer a,
   font-size: 1px;
 }
 
-.residentialContainer {
+.Container {
   text-align: center;
   color: #2196F3;
 }
 
-.residentialContainer::after {
+.Container::after {
   content: "";
   clear: both;
   display: table;
@@ -584,12 +584,12 @@ footer a,
   height: 500px;
 }
 
-.residentialTextContainer {
+.TextContainer {
   text-align: center;
   margin-top: 20px;
 }
 
-.residentialHeaders {
+.Headers {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;

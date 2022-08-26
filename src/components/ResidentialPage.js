@@ -13,8 +13,8 @@ import img6 from '../images/residentialPt2.jpg'
 function Residential() {
     return (
         <main>
-            <h1 className="residentialHeaders">GALLERY</h1>
-            <div className="residentialContainer">
+            <h1 className="Headers">RESIDENTIAL GALLERY</h1>
+            <div className="Container">
                 <div className="box">
                     <img className="images" src={img1} alt={img1} />
                 </div>
@@ -34,12 +34,12 @@ function Residential() {
                     <img className="images" src={img6} alt={img6}/>
                 </div>
             </div>
-            <div className="residentialTextContainer">
-                <h1 className="residentialHeaders">WORKING WITH US</h1>
+            <div className="TextContainer">
+                <h1 className="Headers">WORKING WITH US</h1>
                 <p>With Colorado Building Solutions we...
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet nunc augue. Proin sit amet suscipit tortor. Nunc augue turpis, efficitur ultricies nisi ut, mattis ultrices ex. Ut eu elit egestas felis interdum mattis. Nullam quis dignissim nulla, ut tincidunt tortor. Nulla cursus massa eget nunc rutrum tincidunt
                 </p>
-                <h1 className="residentialHeaders">WHAT WE PROVIDE</h1>
+                <h1 className="Headers">WHAT WE PROVIDE</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet nunc augue. Proin sit amet suscipit tortor. Nunc augue turpis, efficitur ultricies nisi ut, mattis ultrices ex. Ut eu elit egestas felis interdum mattis. Nullam quis dignissim nulla, ut tincidunt tortor. Nulla cursus massa eget nunc rutrum tincidunt</p>
             </div>
             <h1 id="feedBackHeader">FEEDBACK</h1>
