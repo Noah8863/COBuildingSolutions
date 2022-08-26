@@ -302,7 +302,7 @@ nav.primary-navigation ul li ul li a:hover {
 }
 
 .banner:nth-of-type(2) {
-  --img: url('./images/lumberYard.jpg');
+  --img: url('./images/lumberSky.jpg');
 }
 
 .banner:nth-of-type(3) {

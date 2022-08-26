@@ -9,8 +9,7 @@ import img1 from '../images/lumberSky.jpg'
 import img2 from '../images/commericalRoof.jpg'
 import img3 from '../images/lumberLabor.jpg'
 import img4 from '../images/manOnRoof.jpg'
-import img5 from '../images/roofingHouse.jpg'
-import img6 from '../images/haulingLumber.jpg'
+import img5 from '../images/haulingLumber.jpg'
 
 function Carousel() {
 
@@ -29,7 +28,6 @@ function Carousel() {
         <SwiperSlide className="swiper-slide"><img src={img3} alt={img3} /></SwiperSlide>
         <SwiperSlide className="swiper-slide"><img src={img4} alt={img4} /></SwiperSlide>
         <SwiperSlide className="swiper-slide"><img src={img5} alt={img5} /></SwiperSlide>
-        <SwiperSlide className="swiper-slide"><img src={img6} alt={img6} /></SwiperSlide>
       </Swiper>
       
     </>
