@@ -11,7 +11,7 @@ function Commerical() {
     return (
         <main>
             <h1 className="Headers">COMMERICAL GALLERY</h1>
-            <div className="residentialContainer">
+            <div className="Container">
                 <div className="box">
                     <img className="images" src={img1} alt={img1} />
                 </div>
