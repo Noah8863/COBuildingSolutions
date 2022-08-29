@@ -58,7 +58,7 @@ span {
   -webkit-align-items: center;
 }
 .mySwiper{
-  width: 80%;
+  width: 90%;
 }
 .swiper-slide img {
   width: 100%;
@@ -66,7 +66,7 @@ span {
 }
 .imageText{
   position: absolute;
-  background-color: rgb(207, 206, 206, 0.7); 
+  background-color: rgb(207, 206, 206, 0.5); 
   color: white;
   width: 100%;
   bottom: 0;
@@ -363,31 +363,31 @@ nav {
 }
 
 .slide {
-    font-size: 20px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    padding: 13px 30px 13px;
-    outline: 0;
-    border: 1px solid black;
-    cursor: pointer;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    margin-left: 40%;
-    margin-bottom: 20px;
-    color: white;
-    background-color: black;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 30px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  margin-left: 40%;
+  margin-bottom: 20px;
+  color: white;
+  background-color: black;
 }
     
 .slide div {
-    transition: transform 0.4s;
+  transition: transform 0.4s;
 }
   
 .slide:hover div {
-    transform: translateX(-10px);
+  transform: translateX(-10px);
 }
 .slide:hover i {
-    opacity: 1;
-    transform: translateX(-6px);
+  opacity: 1;
+  transform: translateX(-6px);
 }
 .form__field {
   font-family: inherit;
@@ -504,21 +504,17 @@ footer a,
 .lumberPic {
   position: relative;
   width: 80%;
-  margin-top: 5%;
+  margin-top: 20px;
   margin-bottom: 20px;
   left: 10%;
-}
-.lumberPageText-section * {
-  text-align: center;
 }
 .gridStyle {
   position: relative;
   margin: auto;
-  width: 80%;
+  width: 100%;
 }
-.gridText {
-  font-size: 1px;
-}
+
+
 
 // ====== Residential/Commerical Pages ====== //
 
@@ -543,6 +539,10 @@ footer a,
 .TextContainer{
   text-align:center;
   margin-top: 20px;
+  width: 80%;
+  margin: auto;
+  justify-self: center;
+  
 }
 .Headers {
   text-align:center;
@@ -571,10 +571,7 @@ footer a,
 
 // ====== Footer ====== //
 .footerHeaders {
-  margin-bottom: 10px;
-}
-#officeHours {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .footer {
   width: 100%;
@@ -586,7 +583,8 @@ footer a,
 .contactInfo {
   display: grid;
   grid-template-columns: auto auto auto;
-    
+  
+  align-items: center;
 }
 #creator {
   width: auto;
