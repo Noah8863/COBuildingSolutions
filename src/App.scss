@@ -450,7 +450,6 @@ nav {
   height: 200px;
   position: relative;
   margin: auto;
-  top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -788,6 +787,11 @@ footer a,
       justify-content: center;
       width: 150px;
       height: 100px;
+    }
+    .messageTextArea {
+      justify-content: center;
+      width: 300px;
+      left: -15%;
     }
 }
 @media (max-width:440px) {

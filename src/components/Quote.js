@@ -73,7 +73,7 @@ function Quote() {
 
                     <div className="subjectform">
                         <h4 style={{ color: 'white' }}>Your Message/Comments *</h4>
-                        <textarea className="messageTextArea" name="message" id="message" ></textarea>
+                        <textarea className="messageTextArea" name="message" id="message"></textarea>
                     </div>
                     
                     <div className="btn-1">
