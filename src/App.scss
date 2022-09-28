@@ -289,8 +289,8 @@ nav {
 }
 
 .banner {
-	margin-left: calc(50% - 50vw);
-	width: 100vw; height: 37.5vmin;
+	width: auto; 
+  height: 37.5vmin;
 	min-height: 15em;
 	background: linear-gradient(#000, transparent, #000), 
 	var(--img) 50%/ cover;
