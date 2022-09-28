@@ -4,6 +4,9 @@ $gray: #ffffff;
 $bg: #f3f8fa;
 $white: #fff;
 
+body {
+  background-color:rgb(207, 206, 206);
+}
 * {
   margin: 0;
   padding: 0;
@@ -58,7 +61,7 @@ span {
   -webkit-align-items: center;
 }
 .mySwiper{
-  width: 90%;
+  width: 100%;
 }
 .swiper-slide img {
   width: 100%;
@@ -85,15 +88,13 @@ span {
 
 #logo {
   position: relative;
-  margin-top:25px;
-  margin-left: 10px;
-  width: 240px;
-  height: 160px;
+  width: 20%;
+  display: flex;
+  align-items: center;
 }
 
 .navbar {
   top: 10px;
-  margin-top: 15px;
   padding: 5px;
   background-color: $secondary;
   color: #fff;
@@ -452,7 +453,6 @@ nav {
   margin: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 footer a,
@@ -582,7 +582,6 @@ footer a,
 .contactInfo {
   display: grid;
   grid-template-columns: auto auto auto;
-  
   align-items: center;
 }
 #creator {
