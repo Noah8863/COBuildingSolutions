@@ -1,11 +1,12 @@
 import React from 'react'
+import './commerical.scss'
 
-import img1 from '../images/commerical1.jpg'
-import img2 from '../images/commerical2.jpg'
-import img3 from '../images/commericalBfr.jpg'
-import img4 from '../images/commericalAft.jpg'
-import img5 from '../images/commericalPt3.jpg'
-import img6 from '../images/commericalPt4.jpg'
+import img1 from '../../images/commerical1.jpg'
+import img2 from '../../images/commerical2.jpg'
+import img3 from '../../images/commericalBfr.jpg'
+import img4 from '../../images/commericalAft.jpg'
+import img5 from '../../images/commericalPt3.jpg'
+import img6 from '../../images/commericalPt4.jpg'
 
 function Commerical() {
     return (

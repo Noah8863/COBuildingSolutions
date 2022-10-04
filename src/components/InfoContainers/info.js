@@ -1,6 +1,7 @@
 import React from "react";
-import ContactButton from "./Contact_Button";
+import ContactButton from "../ContactButton/contactButton";
 import { Link } from "react-router-dom";
+import './info.scss'
 
 function textInfo() {
   return (
@@ -59,6 +60,33 @@ function textInfo() {
         <ContactButton name="Get A Quote" />
       </Link>
       <div className="banner"></div>
+      <h1 className="infoAreaTitles">OUR SERVICES</h1>
+      <div id="our-services-container">
+        <ul>
+          <li>
+            Roofing- We work with almost any roofing material.
+            <ul>
+              <li>Shake</li>
+              <li>Flat Roofs</li>
+              <li>Custom Roofs</li>
+              <li>Metal</li>
+              <li>Tile</li>
+              <li>Shingle</li>
+              <li>Single Ply</li>
+              <li>Stone Coated Steel</li>
+            </ul>
+          </li>
+          <li>Gutter Installation</li>
+          <li>Gutter Repair</li>
+          <li>Gutter Cleaning</li>
+          <li>Skylights</li>
+          <li>Solar</li>
+          <li>Roof Inspections</li>
+          <li>
+            <a href="/lumber">Lumber</a>
+          </li>
+        </ul>
+      </div>
       <h1 className="infoAreaTitles">ABOUT US</h1>
       <p className="infoText">
         Colorado Building Solutions was founded back in 2017 based out of

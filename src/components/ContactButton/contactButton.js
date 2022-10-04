@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.scss'
+import './contact-button.scss'
 
 function ContactButton(props) {
     return (

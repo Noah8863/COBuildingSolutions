@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import NavBar from './components/NavBar'
-import Quote from './components/Quote'
-import Lumber from './components/Lumber'
-import Carousel from './components/Carousel'
-import Info from './components/textInfo'
-import Footer from './components/Footer'
-import Commerical from './components/CommericalPage'
-import Residential from './components/ResidentialPage'
+import NavBar from './components/NavBar/navbar'
+import Quote from './components/Quote/quote'
+import Lumber from './components/Lumber/lumber'
+import Carousel from './components/Carousel/Carousel'
+import Info from './components/InfoContainers/info'
+import Footer from './components/Footer/footer'
+import Commerical from './components/CommericalPage/commerical'
+import Residential from './components/ResidentialPage/residential'
 import './App.scss';
 
 function App() {

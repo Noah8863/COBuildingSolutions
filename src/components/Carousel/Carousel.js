@@ -1,20 +1,20 @@
-import React from "react";
+import React from '@emotion/react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import { Link } from 'react-router-dom';
+import './carousel.scss'
 import "swiper/css";
 import "swiper/css/navigation";
 
-import img1 from '../images/lumberSky.jpg'
-import img2 from '../images/commericalRoof.jpg'
-import img3 from '../images/lumberLabor.jpg'
-import img4 from '../images/manOnRoof.jpg'
-import img5 from '../images/haulingLumber.jpg'
+import img1 from '../../images/lumberSky.jpg'
+import img2 from '../../images/commericalRoof.jpg'
+import img3 from '../../images/lumberLabor.jpg'
+import img4 from '../../images/manOnRoof.jpg'
+import img5 from '../../images/haulingLumber.jpg'
 
-function Carousel() {
-
-  return (
-    <>
+function Carousel(){
+    return (
+        <>
       <Swiper
         navigation={true}
         modules={[Navigation]}
@@ -59,7 +59,7 @@ function Carousel() {
       </Swiper>
 
     </>
-  );
+    )
 }
 
 export default Carousel;

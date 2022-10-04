@@ -1,0 +1,231 @@
+@import '../../App.scss'; 
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgb(255, 255, 255);
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+}
+.mySwiper {
+  width: 100%;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 500px;
+}
+.imageText {
+  position: absolute;
+  background-color: rgb(207, 206, 206, 0.5);
+  color: white;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.learnMoreBtn {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(3, 3, 3);
+  text-decoration: none;
+}
+.hide {
+  display: none;
+}
+
+#logo {
+  position: relative;
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  top: 10px;
+  padding: 5px;
+  background-color: $secondary;
+  color: #fff;
+}
+.navbarList {
+  position: relative;
+  display: flex;
+  color: #fff;
+  font-size: 24px;
+}
+.roofLinks {
+  font-size: large;
+}
+.dropdown {
+  z-index: 2;
+}
+#roofNav {
+  color: black;
+}
+
+@mixin transition(
+  $property: all,
+  $duration: 0.45s,
+  $ease: cubic-bezier(0.65, 0, 0.076, 1)
+) {
+  transition: $property $duration $ease;
+}
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  &.learn-more {
+    width: 12rem;
+    height: auto;
+    margin-bottom: 20px;
+    .circle {
+      @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: $secondary;
+      border-radius: 1.625rem;
+      .icon {
+        @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: $white;
+        &.arrow {
+          @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+          left: 0.625rem;
+          width: 1.125rem;
+          height: 0.125rem;
+          background: none;
+          &::before {
+            position: absolute;
+            content: "";
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .button-text {
+      @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1.85rem;
+      color: $secondary;
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      .icon {
+        &.arrow {
+          background: $white;
+          transform: translate(1rem, 0);
+        }
+      }
+    }
+    .button-text {
+      color: $white;
+    }
+  }
+}
+
+nav {
+  &.primary-navigation {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    ul li {
+      list-style: none;
+      margin: 0 auto;
+      border-left: 2px solid #000000;
+      display: inline-block;
+      padding: 0 30px;
+      position: relative;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    li a {
+      color: rgb(15, 15, 15);
+    }
+
+    li a:hover {
+      color: #d1d1d1;
+    }
+
+    li:hover {
+      cursor: pointer;
+    }
+
+    ul li ul {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      padding-left: 0;
+      left: 0;
+      display: none;
+      background: white;
+    }
+
+    ul li:hover > ul,
+    ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      min-width: 250px;
+      text-align: left;
+      padding-top: 20px;
+      box-shadow: 0px 3px 5px -1px rgb(255, 255, 255);
+    }
+
+    ul li ul li {
+      clear: both;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+      border-style: none;
+    }
+
+    ul li ul li a:hover {
+      padding-left: 10px;
+      border-left: 2px solid #3ca0e7;
+      transition: all 0.3s ease;
+    }
+  }
+}
