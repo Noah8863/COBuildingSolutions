@@ -1,27 +1,30 @@
 $primary: #c6def1;
-$secondary: #2196F3;
+$secondary: #2196f3;
 $gray: #ffffff;
 $bg: #f3f8fa;
 $white: #fff;
 
 body {
-  background-color:rgb(207, 206, 206);
+  background-color: rgb(207, 206, 206);
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Alumni Sans Pinstripe';
+  font-family: "Alumni Sans Pinstripe";
 }
 
 a {
-text-decoration: none;
+  text-decoration: none;
 }
-table, th, td {
+table,
+th,
+td {
   margin-top: 5%;
   margin-bottom: 5%;
 }
-table, td {
+table,
+td {
   border: 1px solid black;
   padding: 10px;
   font-size: 1px;
@@ -32,9 +35,7 @@ th {
 td {
   background-color: rgb(255, 255, 255);
 }
-li {
-  font-size: larger;
-}
+
 span {
   position: relative;
   z-index: 3;
@@ -60,16 +61,16 @@ span {
   -ms-flex-align: center;
   -webkit-align-items: center;
 }
-.mySwiper{
+.mySwiper {
   width: 100%;
 }
 .swiper-slide img {
   width: 100%;
   height: 500px;
 }
-.imageText{
+.imageText {
   position: absolute;
-  background-color: rgb(207, 206, 206, 0.5); 
+  background-color: rgb(207, 206, 206, 0.5);
   color: white;
   width: 100%;
   bottom: 0;
@@ -103,6 +104,7 @@ span {
   position: relative;
   display: flex;
   color: #fff;
+  font-size:24px;
 }
 .roofLinks {
   font-size: large;
@@ -114,7 +116,11 @@ span {
   color: black;
 }
 
-@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+@mixin transition(
+  $property: all,
+  $duration: 0.45s,
+  $ease: cubic-bezier(0.65, 0, 0.076, 1)
+) {
   transition: $property $duration $ease;
 }
 button {
@@ -134,7 +140,7 @@ button {
     height: auto;
     margin-bottom: 20px;
     .circle {
-      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
       position: relative;
       display: block;
       margin: 0;
@@ -143,21 +149,21 @@ button {
       background: $secondary;
       border-radius: 1.625rem;
       .icon {
-        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+        @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
         position: absolute;
         top: 0;
         bottom: 0;
         margin: auto;
         background: $white;
         &.arrow {
-          @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+          @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
           left: 0.625rem;
           width: 1.125rem;
           height: 0.125rem;
           background: none;
           &::before {
             position: absolute;
-            content: '';
+            content: "";
             top: -0.25rem;
             right: 0.0625rem;
             width: 0.625rem;
@@ -170,7 +176,7 @@ button {
       }
     }
     .button-text {
-      @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+      @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
       position: absolute;
       top: 0;
       left: 0;
@@ -190,8 +196,8 @@ button {
       width: 100%;
       .icon {
         &.arrow {
-        background: $white;
-        transform: translate(1rem, 0);
+          background: $white;
+          transform: translate(1rem, 0);
         }
       }
     }
@@ -201,72 +207,70 @@ button {
   }
 }
 
-
 nav {
-    &.primary-navigation {
+  &.primary-navigation {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    ul li {
+      list-style: none;
       margin: 0 auto;
-      display: block;  
+      border-left: 2px solid #000000;
+      display: inline-block;
+      padding: 0 30px;
+      position: relative;
+      text-decoration: none;
       text-align: center;
-      ul li {
-        list-style: none;
-        margin: 0 auto;
-        border-left: 2px solid #000000;
-        display: inline-block;
-        padding: 0 30px;
-        position: relative;
-        text-decoration: none;
-        text-align: center;
-      }
-  
-      li a {
-        color: rgb(15, 15, 15);
-      }
-  
-      li a:hover {
-        color: #d1d1d1;
-      }
-  
-      li:hover {
-        cursor: pointer;
-      }
-  
-      ul li ul {
-        visibility: hidden;
-        opacity: 0;
-        position: absolute;
-        padding-left: 0;
-        left: 0;
-        display: none;
-        background: white;
-      }
-  
-      ul li:hover > ul,
-      ul li ul:hover {
-        visibility: visible;
-        opacity: 1;
-        display: block;
-        min-width: 250px;
-        text-align: left;
-        padding-top: 20px;
-        box-shadow: 0px 3px 5px -1px rgb(255, 255, 255);
-      }
-  
-      ul li ul li {
-        clear: both;
-        width: 100%;
-        text-align: left;
-        margin-bottom: 20px;
-        border-style: none;
-      }
-  
-      ul li ul li a:hover {
-        padding-left: 10px;
-        border-left: 2px solid #3ca0e7;
-        transition: all 0.3s ease;
-      }
+    }
+
+    li a {
+      color: rgb(15, 15, 15);
+    }
+
+    li a:hover {
+      color: #d1d1d1;
+    }
+
+    li:hover {
+      cursor: pointer;
+    }
+
+    ul li ul {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      padding-left: 0;
+      left: 0;
+      display: none;
+      background: white;
+    }
+
+    ul li:hover > ul,
+    ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      min-width: 250px;
+      text-align: left;
+      padding-top: 20px;
+      box-shadow: 0px 3px 5px -1px rgb(255, 255, 255);
+    }
+
+    ul li ul li {
+      clear: both;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 20px;
+      border-style: none;
+    }
+
+    ul li ul li a:hover {
+      padding-left: 10px;
+      border-left: 2px solid #3ca0e7;
+      transition: all 0.3s ease;
     }
   }
-
+}
 
 // ====== Info Stles ====== //
 
@@ -276,7 +280,7 @@ nav {
   text-align: center;
 }
 .infoText {
-  font-size: 18px;
+  font-size: 24px;
   width: 80%;
   margin: auto;
   margin-top: 20px;
@@ -286,28 +290,30 @@ nav {
   color: $secondary;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
-
+#roofing-sub-text {
+  font-size: 28px;
+}
 .banner {
-	width: auto; 
+  width: auto;
   height: 37.5vmin;
-	min-height: 15em;
-	background: linear-gradient(#000, transparent, #000), 
-	var(--img) 50%/ cover;
-	background-attachment: fixed;
-	background-blend-mode: multiply;
-	
-	&:nth-of-type(1) {
-		--img: url('./images/housePic.jpg');
-	}
-	
-	&:nth-of-type(2) {
-		--img: url('./images/lumberSky.jpg');
-	}
-	
-	&:nth-of-type(3) {
-		--img: url('./images/skyscraper.jpg');
-	}
+  min-height: 15em;
+  background: linear-gradient(#000, transparent, #000), var(--img) 50% / cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+
+  &:nth-of-type(1) {
+    --img: url("./images/housePic.jpg");
+  }
+
+  &:nth-of-type(2) {
+    --img: url("./images/lumberSky.jpg");
+  }
+
+  &:nth-of-type(3) {
+    --img: url("./images/skyscraper.jpg");
+  }
 }
 
 // ====== Quote page styles ===== //
@@ -318,12 +324,12 @@ nav {
   margin-bottom: 2%;
   width: auto;
   height: 100%;
-  background-color: rgb(23,119,203);
+  background-color: rgb(23, 119, 203);
 }
-.nameform { 
+.nameform {
   position: relative;
   margin-left: 20%;
-  
+
   padding: 15px 0 0;
   margin-top: 10px;
   width: 50%;
@@ -347,12 +353,11 @@ nav {
 .messageTextArea {
   position: relative;
   width: 100%;
-  height:150px;
+  height: 150px;
 }
-.checkboxOptions{
+.checkboxOptions {
   margin-top: 10px;
   margin-bottom: 10px;
-  
 }
 .subjectform {
   position: relative;
@@ -378,11 +383,11 @@ nav {
   color: white;
   background-color: black;
 }
-    
+
 .slide div {
   transition: transform 0.4s;
 }
-  
+
 .slide:hover div {
   transform: translateX(-10px);
 }
@@ -430,19 +435,21 @@ nav {
     transition: 0.2s;
     font-size: 1rem;
     color: $gray;
-    font-weight:700;    
+    font-weight: 700;
   }
-  padding-bottom: 6px;  
+  padding-bottom: 6px;
   font-weight: 700;
   border-width: 3px;
-  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image: linear-gradient(to right, $primary, $secondary);
   border-image-slice: 1;
 }
 /* reset input */
-.form__field{
-  &:required,&:invalid { box-shadow:none; }
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
 }
-
 
 // ====== Button style ===== //
 
@@ -457,7 +464,7 @@ nav {
 
 footer a,
 .btn-1 a {
-  text-decoration: none; 
+  text-decoration: none;
   padding: 15px;
   color: #000;
   text-transform: uppercase;
@@ -513,11 +520,9 @@ footer a,
   width: 100%;
 }
 
-
-
 // ====== Residential/Commerical Pages ====== //
 
-.Container{
+.Container {
   text-align: center;
   color: $secondary;
 }
@@ -535,16 +540,15 @@ footer a,
   width: 90%;
   height: 500px;
 }
-.TextContainer{
-  text-align:center;
+.TextContainer {
+  text-align: center;
   margin-top: 20px;
   width: 80%;
   margin: auto;
   justify-self: center;
-  
 }
 .Headers {
-  text-align:center;
+  text-align: center;
   margin-top: 20px;
   margin-bottom: 30px;
   color: $secondary;
@@ -565,8 +569,6 @@ footer a,
   margin-left: 5%;
   margin-right: 5%;
 }
-
-
 
 // ====== Footer ====== //
 .footerHeaders {
@@ -590,14 +592,14 @@ footer a,
   top: 20px;
   padding: 10px;
   text-align: center;
-  background-color:rgb(207, 206, 206);
+  background-color: rgb(207, 206, 206);
 }
 
 .wrapper {
   display: inline-flex;
   list-style: none;
 }
-  
+
 .wrapper .icon {
   position: relative;
   background: rgb(71, 70, 70);
@@ -628,7 +630,7 @@ footer a,
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-  
+
 .wrapper .tooltip::before {
   position: absolute;
   height: 8px;
@@ -639,29 +641,27 @@ footer a,
   transform: translate(-50%) rotate(45deg);
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-  
+
 .wrapper .icon:hover .tooltip {
-    top: -45px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tooltip {
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-    
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-    background: #1877F2;
-    color: #ffffff;
-    
+  background: #1877f2;
+  color: #ffffff;
 }
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-  background: #E4405F;
+  background: #e4405f;
   color: #ffffff;
 }
 .wrapper .nova:hover,
@@ -674,14 +674,13 @@ footer a,
 .wrapper .homefacebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-    background: #1877F2;
-    color: #ffffff;
-    
+  background: #1877f2;
+  color: #ffffff;
 }
 .wrapper .homeinstagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-  background: #E4405F;
+  background: #e4405f;
   color: #ffffff;
 }
 .wrapper .homenova:hover,
@@ -691,126 +690,124 @@ footer a,
   color: #ffffff;
 }
 
-
 // ====== Responsive styles ======= //
 
 @media (max-width: 600px) {
-    .wrapper .icon {
-      width: 30px;
-      height: 30px;
-    }
-    .swiper-slide {
-      font-size: small;
-    }
-    .mySwiper{
-      width: 100%;
-    }
-    main {
-      max-width: 100%;
-    }
-    .swiper-slide img {
-      width: 100%;
-      height: auto;
-    }
-    .inputfield {
-      margin-left: 0%;
-      margin-right: 0%;
-      margin-bottom: 1%;
-    }
-    .Container{
-      display:grid;
-      grid-template-columns: auto auto;
-      justify-content: center;
-    }
-    .images{
-      width: 200px;
-      height: 230px;
-    }
+  .wrapper .icon {
+    width: 30px;
+    height: 30px;
+  }
+  .swiper-slide {
+    font-size: small;
+  }
+  .mySwiper {
+    width: 100%;
+  }
+  main {
+    max-width: 100%;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+  .inputfield {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 1%;
+  }
+  .Container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  .images {
+    width: 200px;
+    height: 230px;
+  }
 }
 
-@media (max-width:550px) {
-    .footer {
-      font-size: small;
-    }
+@media (max-width: 550px) {
+  .footer {
+    font-size: small;
+  }
 }
 
 @media (max-width: 530px) {
-    .dropbtn {
-        font-size: large;
-    }
-    .roofblock {
+  .dropbtn {
+    font-size: large;
+  }
+  .roofblock {
     display: block;
     height: 530px;
-    }
-    .skylightblock {
-        display: block;
-        height: 530px;
-    }
-    .skylightImage {
-        position: relative;
-        top: 320px;
-    }
-    .skylightText{
-        position: absolute;
-        top: 780px;
-    }
-    .solarblock {
-        display: block;
-        height: 530px;
-    }
-    .lumberPic {
-      width: 100%;
-      left: 0%;
-    }
+  }
+  .skylightblock {
+    display: block;
+    height: 530px;
+  }
+  .skylightImage {
+    position: relative;
+    top: 320px;
+  }
+  .skylightText {
+    position: absolute;
+    top: 780px;
+  }
+  .solarblock {
+    display: block;
+    height: 530px;
+  }
+  .lumberPic {
+    width: 100%;
+    left: 0%;
+  }
 }
-@media (max-width:470px){
-    .navbarList {
-      position: relative;
-      display:grid;
-    }
-    nav {
-      &.primary-navigation {
-        ul li {
-          border-left: 0px;
-          margin-top: 3px;
-          margin-bottom: 3px;  
-          border-bottom: 1px solid #000000;
-          
-        }
+@media (max-width: 470px) {
+  .navbarList {
+    position: relative;
+    display: grid;
+  }
+  nav {
+    &.primary-navigation {
+      ul li {
+        border-left: 0px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        border-bottom: 1px solid #000000;
       }
     }
-    .dropbtn {
-      padding: 0px;
-    }
-    #logo {
-      justify-content: center;
-      width: 150px;
-      height: 100px;
-    }
-    .messageTextArea {
-      justify-content: center;
-      width: 300px;
-      left: -15%;
-    }
+  }
+  .dropbtn {
+    padding: 0px;
+  }
+  #logo {
+    justify-content: center;
+    width: 150px;
+    height: 100px;
+  }
+  .messageTextArea {
+    justify-content: center;
+    width: 300px;
+    left: -15%;
+  }
 }
-@media (max-width:440px) {
-    .contactInfo {
-      display:block;
-    }
-    #addressContainer {
-      margin-bottom:20px;
-    }
-    #infoContainer {
-      margin-bottom:20px;
-    }
-    .images{
-      width: 180px;
-      height: 220px;
-    }
+@media (max-width: 440px) {
+  .contactInfo {
+    display: block;
+  }
+  #addressContainer {
+    margin-bottom: 20px;
+  }
+  #infoContainer {
+    margin-bottom: 20px;
+  }
+  .images {
+    width: 180px;
+    height: 220px;
+  }
 }
-@media (max-width: 300px){
+@media (max-width: 300px) {
   .feedbackContainter {
-    display:inline;
+    display: inline;
     text-align: center;
   }
   .feedbackContainter p {

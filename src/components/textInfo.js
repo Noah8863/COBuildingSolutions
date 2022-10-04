@@ -1,28 +1,79 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import ContactButton from "./Contact_Button";
+import { Link } from "react-router-dom";
 
 function textInfo() {
-    return (
-        <main className='infoArea'>
-            <h2 className='infoAreaTitles'>WHO WE ARE</h2>
-            <p className='infoText'>Colorado Building Solutions serves as a leading commercial and residential roofing company, along with a commercial lumber division in the greater Denver and surrounding areas. We’re a team of fully-certified professionals who tackle everything from complex large projects to smaller scale jobs. Fueled by our commitment to excellence, we go the extra mile to make sure clients are completely satisfied with our work. Call us today to schedule a consultation. </p>
-            <Link to='/quote'><button className="learn-more">
-                <span className="circle" aria-hidden="true">
-                    <span className="icon arrow"></span>
-                </span>
-                <span className="button-text">Contact Us</span>
-            </button></Link>
-            <div className='banner'></div>
-            <h2 className='infoAreaTitles'>ROOF REPLACEMENT</h2>
-            <p className='infoText'>Looking for a reliable contractor with extensive experience for your next project? At Colorado Building Solutions, we stand by the excellence of our work and provide clients with personalized attention based on their specific needs. If you’re looking for professional Roof Replacement services, please get in touch for your consultation.</p>
-            <div className='banner'></div>
-            <h2 className='infoAreaTitles'>LUMBER</h2>
-            <p className='infoText'>Colorado Building Solutions provides a variety of lumber ranging from OSB, OSB Tongue and Groove, Pylowood, and traditional lumber. We sell by the bunk and are a commerical whole seller. </p>
-            <div className='banner'></div>
-            <h2 className='infoAreaTitles'>ABOUT US</h2>
-            <p className='infoText'>Colorado Building Solutions was founded back in 2020 and is based out of Englewood Colorado. We have partnerships with Nova Incorporations and take pride in all of our services we provide.</p>
-        </main>
-    )
+  return (
+    <main className="infoArea">
+      <h1 className="infoAreaTitles">WHO WE ARE</h1>
+      <p className="infoText">
+        Established in 2017 Colorado Building Solutions serves as a leading
+        commercial and residential roofing company. We offer roofing services
+        like roof repair, replacements, gutter cleaning, skylight installation
+        and more. We also have a bulk lumber division with stock ready for
+        pickup when needed. For all your building needs in the greater Denver,
+        Golden, Westminster, Thornton, Broomfield, Boulder, Lakewood, Littleton,
+        Highlands Ranch, Centennial, Parker, Aurora, Brighton, and the
+        surrounding areas. We are a team of fully certified professionals who
+        tackle everything from complex, large projects to smaller scale
+        commercial jobs. Fueled by our commitment to excellence, Colorado
+        Building Solutions goes the extra mile to make sure clients are
+        completely satisfied with our work. Colorado Building Solutions,
+        Covering your investments.{" "}
+      </p>
+      <Link to="/quote">
+        <ContactButton name="Contact Us" />
+      </Link>
+      <div className="banner"></div>
+      <h1 className="infoAreaTitles">ROOFING SERVICES</h1>
+      <h1 id="roofing-sub-text">
+        Looking for a reliable contractor with extensive experience for your
+        next project?
+      </h1>
+      <p className="infoText">
+        At Colorado Building Solutions, we stand by the excellence of our work
+        and provide clients with personalized attention based on their specific
+        needs. When it comes to your roofing needs, we serve Denver, Golden,
+        Westminster, Thornton, Broomfield, Boulder, Lakewood, Littleton,
+        Highlands Ranch, Centennial, Parker, Aurora, Brighton, and the
+        surrounding areas., with services like: Roof Replacement, shingle
+        replacement, roof damage repairs, gutter cleaning and installation,
+        skylight installation and repairs as well. When it comes to your roof we
+        are here for you to help cover your investments. If you’re looking for
+        professional roof replacement services, we are the experts in the field.
+      </p>
+      <div className="banner"></div>
+      <h1 className="infoAreaTitles">LUMBER</h1>
+      <p className="infoText">
+        Colorado Building Solutions now has a bulk lumber supply at our
+        warehouse, available today for pickup or delivery. Colorado Building
+        Solutions provides a variety of lumber to meet all of your building
+        needs. Our Lumber supply includes OSB, OSB Tongue and Groove, Plywood, I
+        joist, and traditional lumber. With a few other products being added
+        soon. Colorado Building Solutions is a wholesale lumber vendor serving
+        Denver, Golden, Westminster, Thornton, Broomfield, Boulder, Lakewood,
+        Littleton, Highlands Ranch, Centennial, Parker, Aurora, Brighton, and
+        other surrounding areas.
+      </p>
+      <Link to="/quote">
+        <ContactButton name="Get A Quote" />
+      </Link>
+      <div className="banner"></div>
+      <h1 className="infoAreaTitles">ABOUT US</h1>
+      <p className="infoText">
+        Colorado Building Solutions was founded back in 2017 based out of
+        Englewood, Colorado. Our business got its start when our owners decided
+        to take a step into roofing construction products and services to add an
+        affordable, dependable, and quality roofing company and lumber supply to
+        Denver, Golden, Westminster, Thornton, Broomfield, Boulder, Lakewood,
+        Littleton, Highlands Ranch, Centennial, Parker, Aurora, Brighton, and
+        other surrounding areas. We take pride in all our services we offer and
+        strive to provide you with great service. We are here to help you Cover
+        Your Investments. Colorado Building Solutions has partnerships with Nova
+        Incorporations.
+      </p>
+    </main>
+  );
 }
 
 export default textInfo;
