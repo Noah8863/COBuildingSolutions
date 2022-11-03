@@ -1,9 +1,10 @@
 import React from "react";
+import "./footer.scss";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import StarIcon from "@mui/icons-material/Star";
-import ForestIcon from "@mui/icons-material/Forest";
-import "./footer.scss";
+import CabinIcon from '@mui/icons-material/Cabin';
+import footerLogo from "../../images/CBSL-Footer-logo-white.png";
 
 function Footer() {
   const links = [
@@ -24,11 +25,12 @@ function Footer() {
       },
     },
     {
-      name: "CBS Lumber",
-      link: "https://novanational.com/",
+      // TODO: Ask about naming conventions here. CBS or full name?
+      name: "CBS",
+      link: "http://coloradobuildingsolutions.com",
       id: "cbs-lumber",
       icon: function () {
-        return <ForestIcon />;
+        return <CabinIcon />;
       },
     },
     {
@@ -43,20 +45,27 @@ function Footer() {
   return (
     <div className="footer">
       <div className="contactInfo">
+        <div id="logoContainer">
+          <img src={footerLogo} id="footerLogo" alt="footerLogo" />
+        </div>
+        <div>
+          <h3 className="footerHeaders">Office Hours</h3>
+          <p>8:00am - 3:00pm</p>
+          <p>* NO in person walkins *</p>
+        </div>
         <div id="addressContainer">
           <h3 className="footerHeaders">Address</h3>
           <p>1630 W Evans Ave, Unit C</p>
           <p>Englewood, CO 80110</p>
           <p>USA</p>
-          <h4 id="officeHours">Office Hours</h4>
-          <p>8:00am - 3:00pm</p>
         </div>
-        <div id="infoContainer">
+
+        {/* <div id="infoContainer">
           <h3 className="footerHeaders">Contact</h3>
           <p>Cobuildingsolutions@gmail.com</p>
           <p>Gschendel@cobuildingsolutions.com</p>
           <p>(720) 607-6890</p>
-        </div>
+        </div> */}
         <div id="contactContainer">
           <h3 className="footerHeaders">More About Us</h3>
           <ul className="wrapper">
@@ -77,7 +86,7 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div id="creator">
+      {/* <div id="creator">
         <p style={{ color: "black" }}>
           Proudly Created by{" "}
           <a
@@ -90,7 +99,7 @@ function Footer() {
             Noah Hoffman{" "}
           </a>
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

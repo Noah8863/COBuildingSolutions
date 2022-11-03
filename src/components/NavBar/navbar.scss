@@ -1,23 +1,118 @@
-@import '../../App.scss';
+#navbar {
+    position: relative;
+    width: 100%;
+    background-image: url(../../images/wood-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-color: green;
+}
+#navbar-items {
+    position: relative;
+    top: 50px;
+}
+#logo {
+    position: relative;
+    display: flex;
+    width: 15%;
+    left: 20px;
+    top: 30px;
+}
 
-.navbar {
-  top: 10px;
-  padding: 5px;
-  background-color: $secondary;
-  color: #fff;
+#navbar-items li {
+    cursor: pointer;
 }
-.navbarList {
-  position: relative;
-  display: flex;
-  color: #fff;
-  font-size:24px;
+.navbar-containers {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 0;
+    bottom: 10px;
+    left: 30px;
+    border: 2px;
+    font-size: 16px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 15px;
+    background-color: rgba(44, 43, 43, 0.8);
+    color: white;
 }
-.roofLinks {
-  font-size: large;
+#navbar-contact-container {
+    position: relative;
+    display: block;
+    //TODO: this is whats causing the weird white space
+    // float: right;
+    left: 80vw;
+    bottom: 15vh;
+    margin-right: 10px;
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
 }
-.dropdown {
-  z-index: 2;
+#left-contact {
+    position: relative;
+    float: left;
+    padding-left: 20px;
 }
-#roofNav {
-  color: black;
+
+#contact-btn {
+    color: white;
+    text-decoration: none;
+}
+.phone-number {
+    text-decoration: none;
+    color: black;
+}
+#phone-icon {
+    position: relative;
+    top: 30px;
+    right: 40px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 890px) {
+    #logo {
+        width: 30%;
+    }
+    .navbar-containers {
+        font-size: 12px;
+        position: relative;
+        left: -10px;
+        bottom: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px;
+    }
+    #navbar-contact-container {
+        width: auto;
+        height: 60px;
+        font-size: 16px;
+        margin-right: 0px;
+        bottom: 200px;
+        padding: 5px;
+        left: 19vw;
+    }
+    #navbar-items {
+        position: relative;
+        top: 85px;
+    }
+}
+@media screen and (max-width:550px){
+    #navbar-items {
+        position: relative;
+        top: 80px;
+    }
+    #left-contact {
+        float: none;
+        padding-left: 0px;
+        display: block;
+        top: 50px;
+    }
+    #phone-icon {
+        display: block;
+        top: -20px;
+        left: 70px;
+        border-right: 2px solid black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
