@@ -7,9 +7,19 @@ $white: #fff;
 .infoArea {
   margin-top: 40px;
   margin-bottom: 10px;
-  text-align: center;
 }
-.infoText {
+#about-us-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 30% 60%;
+}
+#contact-us-button {
+  position: relative;
+  float:right;
+  display: flex;
+  right: 40vw;
+}
+.infoText { 
   font-size: 24px;
   width: 80%;
   margin: auto;
@@ -54,5 +64,17 @@ $white: #fff;
 @media screen and (max-width: 400px) {
   .banner {
     display: none;
+  }
+  #about-us-card {
+    grid-template-columns: none;
+  }
+  #about-us-card h1 {
+    display: block;
+  }
+  #contact-us-button {
+    right: 0vw;
+    float:none;
+    display: flex;
+    justify-content: center;
   }
 }
