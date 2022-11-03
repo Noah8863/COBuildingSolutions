@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import NavBar from './components/Navbar/index'
-import Quote from './components/Quote/quote'
+import Quote from './components/Contact/index'
 import Lumber from './components/Lumber/lumber'
 import Carousel from './components/Carousel/Carousel'
 import Info from './components/InfoContainers/info'

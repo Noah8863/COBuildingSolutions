@@ -4,6 +4,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import StarIcon from "@mui/icons-material/Star";
 import CabinIcon from '@mui/icons-material/Cabin';
+import ForestIcon from '@mui/icons-material/Forest';
 import footerLogo from "../../images/CBSL-Footer-logo-white.png";
 
 function Footer() {
@@ -27,10 +28,10 @@ function Footer() {
     {
       // TODO: Ask about naming conventions here. CBS or full name?
       name: "CBS",
-      link: "http://coloradobuildingsolutions.com",
+      link: "http://cbs-lumber.com",
       id: "cbs-lumber",
       icon: function () {
-        return <CabinIcon />;
+        return <ForestIcon />;
       },
     },
     {
