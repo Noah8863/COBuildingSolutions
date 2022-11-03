@@ -6,7 +6,7 @@
   // text-align: center;
   //TODO: Possible style
   width: 100%;
-  height: 800px;
+  top: 0px;
   background-image: url(../../images/main-page-header1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -128,7 +128,7 @@
   --border-radius: 10px;
   background: rgba(255, 255, 255);
   width: 15vw;
-  height: var(--height);
+  height: contain;
   border-radius: var(--border-radius);
   position: relative;
   box-shadow: 0 10px 30px rgba(65, 72, 86, 0.05);
@@ -438,5 +438,11 @@ body .socials > a:hover {
   .socialMediaBtns .icons {
     width: 25px;
     height: 25px;
+  }
+  #left-contact-container h1 {
+    font-size: 28px;
+  }
+  #left-contact-details p {
+    font-size: 18px;
   }
 }
