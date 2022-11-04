@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import NavBar from './components/NavBar/navbar'
-import Quote from './components/Quote/quote'
+import NavBar from './components/Navbar/index'
+import Quote from './components/Contact/index'
 import Lumber from './components/Lumber/lumber'
 import Carousel from './components/Carousel/Carousel'
 import Info from './components/InfoContainers/info'
-import Footer from './components/Footer/footer'
+import Footer from './components/Footer/index'
 import Commerical from './components/CommericalPage/commerical'
 import Residential from './components/ResidentialPage/residential'
 import './App.scss';
@@ -15,20 +15,14 @@ function App() {
             <NavBar />
             <Switch>
                 <Route exact path="/">
-                    <Carousel /> 
+                    {/* <Carousel />  */}
                     <Info /> 
                 </Route>
-                 <Route exact path="/quote">
+                <Route exact path="/services">
+                    <Info /> 
+                </Route>
+                <Route exact path="/quote">
                     <Quote />
-                </Route>
-                <Route exact path="/lumber">
-                    <Lumber />
-                </Route>
-                <Route exact path="/commerical">
-                    <Commerical />
-                </Route> 
-                <Route exact path="/residential">
-                    <Residential />
                 </Route>
             </Switch>
             <Footer />

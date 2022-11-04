@@ -1,31 +1,35 @@
 import React from "react";
 import ContactButton from "../ContactButton/contactButton";
 import { Link } from "react-router-dom";
-import './info.scss'
+import "./info.scss";
 
 function textInfo() {
   return (
     <main className="infoArea">
-      <h1 className="infoAreaTitles">WHO WE ARE</h1>
-      <p className="infoText">
-        Established in 2017 Colorado Building Solutions serves as a leading
-        commercial and residential roofing company. We offer roofing services
-        like roof repair, replacements, gutter cleaning, skylight installation
-        and more. We also have a bulk lumber division with stock ready for
-        pickup when needed. For all your building needs in the greater Denver,
-        Golden, Westminster, Thornton, Broomfield, Boulder, Lakewood, Littleton,
-        Highlands Ranch, Centennial, Parker, Aurora, Brighton, and the
-        surrounding areas. We are a team of fully certified professionals who
-        tackle everything from complex, large projects to smaller scale
-        commercial jobs. Fueled by our commitment to excellence, Colorado
-        Building Solutions goes the extra mile to make sure clients are
-        completely satisfied with our work. Colorado Building Solutions,
-        Covering your investments.{" "}
-      </p>
-      <Link to="/quote">
-        <ContactButton name="Contact Us" />
-      </Link>
-      <div className="banner"></div>
+      <div id="about-us-container">
+        <div id="about-us-card">
+          <h1 className="infoAreaTitles">WHO WE ARE</h1>
+          <p className="infoText">
+            Established in 2017 Colorado Building Solutions serves as a leading
+            commercial and residential roofing company. We offer roofing
+            services like roof repair, replacements, gutter cleaning, skylight
+            installation and more. We also have a bulk lumber division with
+            stock ready for pickup when needed. For all your building needs in
+            the greater Denver, Golden, Westminster, Thornton, Broomfield,
+            Boulder, Lakewood, Littleton, Highlands Ranch, Centennial, Parker,
+            Aurora, Brighton, and the surrounding areas. We are a team of fully
+            certified professionals who tackle everything from complex, large
+            projects to smaller scale commercial jobs. Fueled by our commitment
+            to excellence, Colorado Building Solutions goes the extra mile to
+            make sure clients are completely satisfied with our work. Colorado
+            Building Solutions, Covering your investments.{" "}
+          </p>
+        </div>
+        <Link to="/quote" id="contact-us-button">
+          <ContactButton name="Get a Quote" />
+        </Link>
+      </div>
+      {/* <div className="banner"></div>
       <h1 className="infoAreaTitles">ROOFING SERVICES</h1>
       <h1 id="roofing-sub-text">
         Looking for a reliable contractor with extensive experience for your
@@ -99,7 +103,7 @@ function textInfo() {
         strive to provide you with great service. We are here to help you Cover
         Your Investments. Colorado Building Solutions has partnerships with Nova
         Incorporations.
-      </p>
+      </p> */}
     </main>
   );
 }
