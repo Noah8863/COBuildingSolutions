@@ -8,7 +8,7 @@ function textInfo() {
     <main className="infoArea">
       <div id="about-us-container">
         <div id="about-us-card">
-          <h1 className="infoAreaTitles">WHO WE ARE</h1>
+          <h1 id="who-we-are">WHO WE ARE</h1>
           <p className="infoText">
             Established in 2017 Colorado Building Solutions serves as a leading
             commercial and residential roofing company. We offer roofing
@@ -30,7 +30,8 @@ function textInfo() {
         </Link> */}
       </div>
       <div id="roofing-info-container">
-        <div id="roofing-into-card">
+        <div id="roofing-info-card">
+        <h1 id="infoAreaTitles-mobile">ROOFING SERVICES</h1>
           <p className="infoText">
             Looking for a reliable contractor with extensive experience for your
             next project? At Colorado Building Solutions, we stand by the
@@ -46,7 +47,7 @@ function textInfo() {
             professional roof replacement services, we are the experts in the
             field.
           </p>
-          <h1 className="infoAreaTitles">ROOFING SERVICES</h1>
+          <h1 id="infoAreaTitles-desktop">ROOFING SERVICES</h1>
         </div>
       </div>
       {/* <h1 className="infoAreaTitles">LUMBER</h1>

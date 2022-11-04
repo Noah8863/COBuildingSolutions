@@ -15,30 +15,36 @@ $white: #fff;
   grid-template-columns: 40% auto;
   background-color: red;
   width: auto;
+  text-align: left;
+  font-size: 18px;
+  padding: 20px;
 }
 .contact-us-button {
   position: relative;
-  float:right;
+  float: right;
   display: flex;
   right: 40vw;
 }
-.infoText { 
-  font-size: 24px;
-  width: 80%;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-.infoAreaTitles {
+#who-we-are {
   color: $secondary;
   text-align: center;
+  font-size: 28px;
 }
-#roofing-into-card {
+.infoAreaTitles-desktop {
+  color: $secondary;
+  text-align: center;
+  font-size: 28px;
+}
+#roofing-info-card {
   position: relative;
   display: grid;
+  font-size: 18px;
   grid-template-columns: auto 40%;
-  background-color:green;
-
+  background-color: green;
+  padding: 20px;
+}
+#infoAreaTitles-mobile {
+  display: none;
 }
 
 // .banner {
@@ -63,15 +69,25 @@ $white: #fff;
 // }
 
 @media screen and (max-width: 400px) {
-  #about-us-card {
+  #about-us-card,
+  #roofing-info-card {
     grid-template-columns: none;
+  }
+  #infoAreaTitles-desktop {
+    display: none;
+  }
+  #infoAreaTitles-mobile {
+    display: block;
+    color: $secondary;
+    text-align: center;
+    font-size: 28px;
   }
   #about-us-card h1 {
     display: block;
   }
   #contact-us-button {
     right: 0vw;
-    float:none;
+    float: none;
     display: flex;
     justify-content: center;
   }
