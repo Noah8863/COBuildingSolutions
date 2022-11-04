@@ -4,16 +4,19 @@ $gray: #ffffff;
 $bg: #f3f8fa;
 $white: #fff;
 
-.infoArea {
-  margin-top: 40px;
-  margin-bottom: 10px;
+#about-us-container {
+  position: relative;
+  display: flex;
+  width: 100vw;
 }
 #about-us-card {
   position: relative;
   display: grid;
-  grid-template-columns: 30% 60%;
+  grid-template-columns: 40% auto;
+  background-color: red;
+  width: auto;
 }
-#contact-us-button {
+.contact-us-button {
   position: relative;
   float:right;
   display: flex;
@@ -29,42 +32,37 @@ $white: #fff;
 .infoAreaTitles {
   color: $secondary;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
-#roofing-sub-text {
-  font-size: 28px;
-}
-#our-services-container {
+#roofing-into-card {
   position: relative;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto 40%;
+  background-color:green;
+
 }
-.banner {
-  width: auto;
-  height: 37.5vmin;
-  min-height: 15em;
-  background: linear-gradient(#000, transparent, #000), var(--img) 50% / cover;
-  background-attachment: fixed;
-  background-blend-mode: multiply;
 
-  &:nth-of-type(1) {
-    --img: url("../../images/housePic.jpg");
-  }
+// .banner {
+//   width: auto;
+//   height: 37.5vmin;
+//   min-height: 15em;
+//   background: linear-gradient(#000, transparent, #000), var(--img) 50% / cover;
+//   background-attachment: fixed;
+//   background-blend-mode: multiply;
 
-  &:nth-of-type(2) {
-    --img: url("../../images/lumberSky.jpg");
-  }
+//   &:nth-of-type(1) {
+//     --img: url("../../images/housePic.jpg");
+//   }
 
-  &:nth-of-type(3) {
-    --img: url("../../images/skyscraper.jpg");
-  }
-}
+//   &:nth-of-type(2) {
+//     --img: url("../../images/lumberSky.jpg");
+//   }
+
+//   &:nth-of-type(3) {
+//     --img: url("../../images/skyscraper.jpg");
+//   }
+// }
 
 @media screen and (max-width: 400px) {
-  .banner {
-    display: none;
-  }
   #about-us-card {
     grid-template-columns: none;
   }

@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import NavBar from './components/Navbar/index'
+import NavBar from './components/NavBar/index'
 import Quote from './components/Contact/index'
 import Lumber from './components/Lumber/lumber'
-import Carousel from './components/Carousel/Carousel'
 import Info from './components/InfoContainers/info'
 import Footer from './components/Footer/index'
 import Commerical from './components/CommericalPage/commerical'
@@ -15,7 +14,6 @@ function App() {
             <NavBar />
             <Switch>
                 <Route exact path="/">
-                    {/* <Carousel />  */}
                     <Info /> 
                 </Route>
                 <Route exact path="/services">

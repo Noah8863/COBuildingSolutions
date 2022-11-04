@@ -25,30 +25,31 @@ function textInfo() {
             Building Solutions, Covering your investments.{" "}
           </p>
         </div>
-        <Link to="/quote" id="contact-us-button">
+        {/* <Link to="/quote" className="contact-us-button">
           <ContactButton name="Get a Quote" />
-        </Link>
+        </Link> */}
       </div>
-      {/* <div className="banner"></div>
-      <h1 className="infoAreaTitles">ROOFING SERVICES</h1>
-      <h1 id="roofing-sub-text">
-        Looking for a reliable contractor with extensive experience for your
-        next project?
-      </h1>
-      <p className="infoText">
-        At Colorado Building Solutions, we stand by the excellence of our work
-        and provide clients with personalized attention based on their specific
-        needs. When it comes to your roofing needs, we serve Denver, Golden,
-        Westminster, Thornton, Broomfield, Boulder, Lakewood, Littleton,
-        Highlands Ranch, Centennial, Parker, Aurora, Brighton, and the
-        surrounding areas., with services like: Roof Replacement, shingle
-        replacement, roof damage repairs, gutter cleaning and installation,
-        skylight installation and repairs as well. When it comes to your roof we
-        are here for you to help cover your investments. If you’re looking for
-        professional roof replacement services, we are the experts in the field.
-      </p>
-      <div className="banner"></div>
-      <h1 className="infoAreaTitles">LUMBER</h1>
+      <div id="roofing-info-container">
+        <div id="roofing-into-card">
+          <p className="infoText">
+            Looking for a reliable contractor with extensive experience for your
+            next project? At Colorado Building Solutions, we stand by the
+            excellence of our work and provide clients with personalized
+            attention based on their specific needs. When it comes to your
+            roofing needs, we serve Denver, Golden, Westminster, Thornton,
+            Broomfield, Boulder, Lakewood, Littleton, Highlands Ranch,
+            Centennial, Parker, Aurora, Brighton, and the surrounding areas.,
+            with services like: Roof Replacement, shingle replacement, roof
+            damage repairs, gutter cleaning and installation, skylight
+            installation and repairs as well. When it comes to your roof we are
+            here for you to help cover your investments. If you’re looking for
+            professional roof replacement services, we are the experts in the
+            field.
+          </p>
+          <h1 className="infoAreaTitles">ROOFING SERVICES</h1>
+        </div>
+      </div>
+      {/* <h1 className="infoAreaTitles">LUMBER</h1>
       <p className="infoText">
         Colorado Building Solutions now has a bulk lumber supply at our
         warehouse, available today for pickup or delivery. Colorado Building
@@ -62,8 +63,8 @@ function textInfo() {
       </p>
       <Link to="/quote">
         <ContactButton name="Get A Quote" />
-      </Link>
-      <div className="banner"></div>
+      </Link> */}
+      {/* <div className="banner"></div>
       <h1 className="infoAreaTitles">OUR SERVICES</h1>
       <div id="our-services-container">
         <ul>
@@ -90,8 +91,8 @@ function textInfo() {
             <a href="/lumber">Lumber</a>
           </li>
         </ul>
-      </div>
-      <h1 className="infoAreaTitles">ABOUT US</h1>
+      </div> */}
+      {/* <h1 className="infoAreaTitles">ABOUT US</h1>
       <p className="infoText">
         Colorado Building Solutions was founded back in 2017 based out of
         Englewood, Colorado. Our business got its start when our owners decided
