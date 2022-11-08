@@ -70,10 +70,6 @@ function Contact() {
               <PhoneInTalkIcon className="contact-icons" />
               (720)-756-1299
             </a>
-            <a href="mailto:info@cbs-lumber.com">
-              <EmailIcon className="contact-icons" />
-              Info@CBS-Lumber.com
-            </a>
           </div>
         </div>
         <form className="inputContainer" onSubmit={sendEmail}>
@@ -108,27 +104,22 @@ function Contact() {
             <div id="checklist">
 
               <input id="lumber" type="checkbox" value="1" />
-              <label htmlFor="01 lumber">Lumber</label>
+              <label htmlFor="01 lumber">Roofing Service</label>
 
               <input id="osb" type="checkbox" value="2" />
-              <label htmlFor="02 osb">OSB</label>
+              <label htmlFor="02 osb">Roofing Inspection</label>
 
               <input id="plywood" type="checkbox" value="3" />
-              <label htmlFor="03 plywood">Plywood</label>
+              <label htmlFor="03 plywood">Skylight Install</label>
 
               <input id="lvl" type="checkbox" value="7" />
-              <label htmlFor="07 lvl">LVL</label>
+              <label htmlFor="07 lvl">Solar Panel Install</label>
 
               <input id="ijoists" type="checkbox" value="4" />
-              <label htmlFor="04 ijoists">I Joists</label>
+              <label htmlFor="04 ijoists">Gutter Cleaning</label>
 
               <input id="lsl" type="checkbox" value="5" />
-              <label htmlFor="05 lsl">LSL</label>
-
-              <input id="ewp" type="checkbox" value="6" />
-              <label htmlFor="06 ewp">EWP</label>
-
-              
+              <label htmlFor="05 lsl">Lumber</label>
             </div>
           </div>
           <p type="Message:">

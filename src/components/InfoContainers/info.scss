@@ -12,12 +12,14 @@ $white: #fff;
 #about-us-card {
   position: relative;
   display: grid;
-  grid-template-columns: 40% auto;
+  justify-content: center;
+  grid-template-columns: 40% 30%;
   background-color: red;
   width: auto;
   text-align: left;
-  font-size: 18px;
   padding: 20px;
+  color: white;
+  font-size:22px;
 }
 .contact-us-button {
   position: relative;
@@ -26,9 +28,18 @@ $white: #fff;
   right: 40vw;
 }
 #who-we-are {
-  color: $secondary;
+  position: relative;
   text-align: center;
-  font-size: 28px;
+  font-size: 34px;
+  top: 5vh;
+  color: white;
+}
+#infoAreaTitles-desktop {
+  position: relative;
+  text-align: center;
+  font-size: 34px;
+  top: 5vh;
+  color: white;
 }
 .infoAreaTitles-desktop {
   color: $secondary;
@@ -38,13 +49,51 @@ $white: #fff;
 #roofing-info-card {
   position: relative;
   display: grid;
-  font-size: 18px;
-  grid-template-columns: auto 40%;
+  font-size: 22px;
+  justify-content: center;
+  grid-template-columns: 40% 30%;
   background-color: green;
   padding: 20px;
+  color: white;
 }
 #infoAreaTitles-mobile {
   display: none;
+}
+.infoText {
+  padding: 30px;
+}
+.info-containers {
+  position: relative;
+  display: flex;
+  width: auto;
+  background-image: url(../../images/wood-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 130px;
+  margin: auto;
+  justify-content: center;
+}
+.info-cards {
+  position: relative;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  background-color: rgba(144, 143, 141, 0.8);
+  padding: 20px;
+  width: 70%;
+}
+.info-cards p {
+  font-size: 24px;
+  padding: 10px;
+  text-align: left;
+}
+.card-header {
+  position: relative;
+  border-right: 4px solid black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+  text-align: center;
 }
 
 // .banner {

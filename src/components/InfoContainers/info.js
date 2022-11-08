@@ -22,7 +22,7 @@ function textInfo() {
             projects to smaller scale commercial jobs. Fueled by our commitment
             to excellence, Colorado Building Solutions goes the extra mile to
             make sure clients are completely satisfied with our work. Colorado
-            Building Solutions, Covering your investments.{" "}
+            Building Solutions, Covering your investments.
           </p>
         </div>
         {/* <Link to="/quote" className="contact-us-button">
@@ -31,7 +31,7 @@ function textInfo() {
       </div>
       <div id="roofing-info-container">
         <div id="roofing-info-card">
-        <h1 id="infoAreaTitles-mobile">ROOFING SERVICES</h1>
+          <h1 id="infoAreaTitles-mobile">ROOFING SERVICES</h1>
           <p className="infoText">
             Looking for a reliable contractor with extensive experience for your
             next project? At Colorado Building Solutions, we stand by the
@@ -48,6 +48,28 @@ function textInfo() {
             field.
           </p>
           <h1 id="infoAreaTitles-desktop">ROOFING SERVICES</h1>
+        </div>
+      </div>
+      <div className="info-containers">
+        <div className="info-cards">
+          <div>
+            <h1 className="card-header">ABOUT US</h1>
+          </div>
+          <div>
+            <p>
+              CBS-Lumber supply division, based out of Englewood, Colorado, was
+              founded back in 2020 when our owners saw the impact the supply
+              shortages brought to us. Our goal is to bring the most affordable,
+              quality lumber products for either pick-up or delivery. We value
+              the relationships we form with our customers and strive to supply
+              you with what you need. CBS-Lumber is proud to serve Denver,
+              Golden, Westminster, Thornton, Broomfield, Boulder, Lakewood,
+              Littleton, Highlands Ranch, Centennial, Parker, Aurora, Brighton,
+              and other surrounding areas. Colorado Building Solutions has
+              partnerships with Nova Incorporations. We take pride in all of our
+              services we offer and strive to provide you with great service.
+            </p>
+          </div>
         </div>
       </div>
       {/* <h1 className="infoAreaTitles">LUMBER</h1>

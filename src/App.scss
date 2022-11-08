@@ -3,6 +3,10 @@ $secondary: #2196f3;
 $gray: #ffffff;
 $bg: #f3f8fa;
 $white: #fff;
+@font-face {
+  font-family: mainFont;
+  src: url(UniversLightCondensed.ttf);
+}
 
 body {
   background-color: rgb(207, 206, 206);
@@ -10,6 +14,7 @@ body {
 * {
   margin: 0;
   padding: 0;
+  font-family: mainFont;
 }
 
 a {
