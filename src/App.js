@@ -6,7 +6,9 @@ import Info from './components/InfoContainers/info'
 import Footer from './components/Footer/index'
 import Commerical from './components/CommericalPage/commerical'
 import Residential from './components/ResidentialPage/residential'
+import ContactContainer from './components/ContactContainer/index'
 import './App.scss';
+import Certificate from './components/Certification';
 
 function App() {
     return (
@@ -15,6 +17,8 @@ function App() {
             <Switch>
                 <Route exact path="/">
                     <Info /> 
+                    <Certificate />
+                    <ContactContainer />
                 </Route>
                 <Route exact path="/services">
                     <Info /> 
