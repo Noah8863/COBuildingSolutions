@@ -1,6 +1,7 @@
 import React from "react";
 import ContactButton from "../ContactButton/contactButton";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./info.scss";
 
 function textInfo() {
@@ -57,77 +58,60 @@ function textInfo() {
           </div>
           <div>
             <p>
-              CBS-Lumber supply division, based out of Englewood, Colorado, was
-              founded back in 2020 when our owners saw the impact the supply
-              shortages brought to us. Our goal is to bring the most affordable,
-              quality lumber products for either pick-up or delivery. We value
-              the relationships we form with our customers and strive to supply
-              you with what you need. CBS-Lumber is proud to serve Denver,
-              Golden, Westminster, Thornton, Broomfield, Boulder, Lakewood,
-              Littleton, Highlands Ranch, Centennial, Parker, Aurora, Brighton,
-              and other surrounding areas. Colorado Building Solutions has
-              partnerships with Nova Incorporations. We take pride in all of our
-              services we offer and strive to provide you with great service.
+              
+              Colorado Building Solutions was founded back in 2017 based out of
+              Englewood, Colorado. Our business got its start when our owners
+              decided to take a step into roofing construction products and
+              services to add an affordable, dependable, and quality roofing
+              company and lumber supply to Denver, Golden, Westminster,
+              Thornton, Broomfield, Boulder, Lakewood, Littleton, Highlands
+              Ranch, Centennial, Parker, Aurora, Brighton, and other surrounding
+              areas. We take pride in all our services we offer and strive to
+              provide you with great service. We are here to help you Cover Your
+              Investments. Colorado Building Solutions has partnerships with
+              Nova Incorporations.
             </p>
           </div>
         </div>
       </div>
-      {/* <h1 className="infoAreaTitles">LUMBER</h1>
-      <p className="infoText">
-        Colorado Building Solutions now has a bulk lumber supply at our
-        warehouse, available today for pickup or delivery. Colorado Building
-        Solutions provides a variety of lumber to meet all of your building
-        needs. Our Lumber supply includes OSB, OSB Tongue and Groove, Plywood, I
-        joist, and traditional lumber. With a few other products being added
-        soon. Colorado Building Solutions is a wholesale lumber vendor serving
-        Denver, Golden, Westminster, Thornton, Broomfield, Boulder, Lakewood,
-        Littleton, Highlands Ranch, Centennial, Parker, Aurora, Brighton, and
-        other surrounding areas.
-      </p>
-      <Link to="/quote">
-        <ContactButton name="Get A Quote" />
-      </Link> */}
-      {/* <div className="banner"></div>
-      <h1 className="infoAreaTitles">OUR SERVICES</h1>
-      <div id="our-services-container">
-        <ul>
-          <li>
-            Roofing- We work with almost any roofing material.
-            <ul>
-              <li>Shake</li>
-              <li>Flat Roofs</li>
-              <li>Custom Roofs</li>
-              <li>Metal</li>
-              <li>Tile</li>
-              <li>Shingle</li>
-              <li>Single Ply</li>
-              <li>Stone Coated Steel</li>
-            </ul>
-          </li>
-          <li>Gutter Installation</li>
-          <li>Gutter Repair</li>
-          <li>Gutter Cleaning</li>
-          <li>Skylights</li>
-          <li>Solar</li>
-          <li>Roof Inspections</li>
-          <li>
-            <a href="/lumber">Lumber</a>
-          </li>
-        </ul>
-      </div> */}
-      {/* <h1 className="infoAreaTitles">ABOUT US</h1>
-      <p className="infoText">
-        Colorado Building Solutions was founded back in 2017 based out of
-        Englewood, Colorado. Our business got its start when our owners decided
-        to take a step into roofing construction products and services to add an
-        affordable, dependable, and quality roofing company and lumber supply to
-        Denver, Golden, Westminster, Thornton, Broomfield, Boulder, Lakewood,
-        Littleton, Highlands Ranch, Centennial, Parker, Aurora, Brighton, and
-        other surrounding areas. We take pride in all our services we offer and
-        strive to provide you with great service. We are here to help you Cover
-        Your Investments. Colorado Building Solutions has partnerships with Nova
-        Incorporations.
-      </p> */}
+      <div id="service-container">
+        <h1>OUR SERVICES</h1>
+        <div id="service-container-grid">
+          <div className="service-items">
+            <h5>Roofing</h5>
+            <p>
+              We work with any material! Shake, Flat roofs, Custom roofs, Metal,
+              tiel, shingle, single ply, stone coated steel
+            </p>
+          </div>
+
+          <div className="service-items">
+            <h5>Gutter</h5>
+            <p>Installation, Repair, and Cleaning</p>
+          </div>
+
+          <div className="service-items">
+            <h5>Skylights</h5>
+            <p>Installation, Repair, and Replacements</p>
+          </div>
+
+          <div className="service-items">
+            <h5>Solar</h5>
+            <p>Installation, Repair, and Replacements</p>
+          </div>
+
+          <div className="service-items">
+            <h5>Lumber</h5>
+            <p>OSM, Plywood, I Joists, OBS, OBS Tongue and Groove</p>
+          </div>
+
+          <div className="service-items">
+          <FontAwesomeIcon icon="fa-solid fa-user-helmet-safety" />
+            <h5>Roof Inspections</h5>
+            <p>Certified and Experinced</p>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
