@@ -6,6 +6,7 @@ import Info from './components/InfoContainers/info'
 import Footer from './components/Footer/index'
 import ContactContainer from './components/ContactContainer/index'
 import Certificate from './components/Certification';
+import Carousel from './components/Carousel/index'
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     <ContactContainer />
                 </Route>
                 <Route exact path="/services">
+                    <Carousel />
                     <Info /> 
                 </Route>
                 <Route exact path="/quote">

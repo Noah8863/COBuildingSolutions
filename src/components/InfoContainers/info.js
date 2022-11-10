@@ -1,8 +1,15 @@
 import React from "react";
 import ContactButton from "../ContactButton/contactButton";
+import VideoPlayer from "react-background-video-player";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./info.scss";
+import roofIcon from "../../Icons/roof-icon.png";
+import gutterIcon from "../../Icons/gutter-icon.png";
+import skylightIcon from "../../Icons/skylight-icon.png";
+import roofInspectionIcon from "../../Icons/roof-inspection-icon.png";
+import solarIcon from "../../Icons/solar-icon.png";
+import lumberIcon from "../../Icons/lumber-icon.png";
+import backgroundVideo from "../../Videos/Drone-Video.mp4";
 
 function textInfo() {
   return (
@@ -10,6 +17,18 @@ function textInfo() {
       <div id="about-us-container">
         <div id="about-us-card">
           <h1 id="who-we-are">WHO WE ARE</h1>
+          {/* <video autoPlay muted loop id="backgroundVideo">
+            <source src={backgroundVideo} type="video/mp4" />
+              Your browser does not support HTML5 video.
+          </video> */}
+          <VideoPlayer
+            className="video"
+            src={
+              backgroundVideo
+            }
+            autoPlay={true}
+            muted={true}
+          />
           <p className="infoText">
             Established in 2017 Colorado Building Solutions serves as a leading
             commercial and residential roofing company. We offer roofing
@@ -24,16 +43,16 @@ function textInfo() {
             to excellence, Colorado Building Solutions goes the extra mile to
             make sure clients are completely satisfied with our work. Colorado
             Building Solutions, Covering your investments.
+            <Link to="/quote">
+              <button className="contact-us-btn">Contact Us</button>
+            </Link>
           </p>
         </div>
-        {/* <Link to="/quote" className="contact-us-button">
-          <ContactButton name="Get a Quote" />
-        </Link> */}
       </div>
       <div id="roofing-info-container">
         <div id="roofing-info-card">
-          <h1 id="infoAreaTitles-mobile">ROOFING SERVICES</h1>
           <p className="infoText">
+            <h1 id="infoAreaTitles-mobile">ROOFING SERVICES</h1>
             Looking for a reliable contractor with extensive experience for your
             next project? At Colorado Building Solutions, we stand by the
             excellence of our work and provide clients with personalized
@@ -47,6 +66,9 @@ function textInfo() {
             here for you to help cover your investments. If you’re looking for
             professional roof replacement services, we are the experts in the
             field.
+            <Link to="/quote">
+              <button className="contact-us-btn">Get A Quote!</button>
+            </Link>
           </p>
           <h1 id="infoAreaTitles-desktop">ROOFING SERVICES</h1>
         </div>
@@ -58,7 +80,6 @@ function textInfo() {
           </div>
           <div>
             <p>
-              
               Colorado Building Solutions was founded back in 2017 based out of
               Englewood, Colorado. Our business got its start when our owners
               decided to take a step into roofing construction products and
@@ -78,6 +99,7 @@ function textInfo() {
         <h1>OUR SERVICES</h1>
         <div id="service-container-grid">
           <div className="service-items">
+            <img className="icons" src={roofIcon} alt="Roofing Icon" />
             <h5>Roofing</h5>
             <p>
               We work with any material! Shake, Flat roofs, Custom roofs, Metal,
@@ -86,31 +108,43 @@ function textInfo() {
           </div>
 
           <div className="service-items">
+            <img className="icons" src={gutterIcon} alt="Gutter Icon" />
             <h5>Gutter</h5>
             <p>Installation, Repair, and Cleaning</p>
           </div>
 
           <div className="service-items">
+            <img className="icons" src={skylightIcon} alt="Skylight Icon" />
             <h5>Skylights</h5>
             <p>Installation, Repair, and Replacements</p>
           </div>
 
           <div className="service-items">
+            <img className="icons" src={solarIcon} alt="Solar Icon" />
             <h5>Solar</h5>
             <p>Installation, Repair, and Replacements</p>
           </div>
 
           <div className="service-items">
+            <img className="icons" src={lumberIcon} alt="Lumber Icon" />
             <h5>Lumber</h5>
             <p>OSM, Plywood, I Joists, OBS, OBS Tongue and Groove</p>
           </div>
 
           <div className="service-items">
-          <FontAwesomeIcon icon="fa-solid fa-user-helmet-safety" />
+            <img
+              className="icons"
+              src={roofInspectionIcon}
+              alt="Roofing Inspection Icon"
+            />
             <h5>Roof Inspections</h5>
             <p>Certified and Experinced</p>
           </div>
         </div>
+        {/*TODO: may need to set some ids for special styles here */}
+        {/* <Link to="/quote">
+          <button className="contact-us-btn">Contact Us</button>
+        </Link> */}
       </div>
     </main>
   );

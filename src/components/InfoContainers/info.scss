@@ -1,10 +1,12 @@
-$primary: #c6def1;
-$secondary: #2196f3;
-$gray: #ffffff;
-$bg: #f3f8fa;
-$white: #fff;
-
-
+.contact-us-btn {
+  display: block;
+  position: relative;
+  padding: 10px;
+  top: 20px;
+  background-color: #fff;
+  border-radius: 25px;
+  margin: auto;
+}
 #about-us-card {
   position: relative;
   display: grid;
@@ -13,8 +15,19 @@ $white: #fff;
   width: auto;
   text-align: left;
   padding: 20px;
-  color: white;
-  font-size:22px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  background-color: grey;
+  z-index: 3;
+  // background-image: url(../../images/roofing-background.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+}
+.video {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  opacity: 0.5;
 }
 .contact-us-button {
   position: relative;
@@ -25,36 +38,44 @@ $white: #fff;
 #who-we-are {
   position: relative;
   text-align: center;
-  font-size: 34px;
-  top: 5vh;
-  color: white;
+  font-size: 55px;
+  // top: 5vh;
+  color: rgb(0, 0, 0);
+  border-right: 5px solid black;
 }
+
 #infoAreaTitles-desktop {
   position: relative;
+  color: rgb(0, 0, 0);
   text-align: center;
-  font-size: 34px;
+  font-size: 38px;
   top: 5vh;
-  color: white;
-}
-.infoAreaTitles-desktop {
-  color: $secondary;
-  text-align: center;
-  font-size: 28px;
 }
 #roofing-info-card {
   position: relative;
   display: grid;
-  font-size: 22px;
+  font-size: 28px;
   justify-content: center;
+  align-items: center;
+  text-align:center;
   grid-template-columns: 40% 30%;
-  padding: 20px;
-  color: white;
+  // padding: 20px;
+  color: rgb(255, 255, 255);
+  background-image: url(../../images/house-with-roof-work.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
 }
 #infoAreaTitles-mobile {
   display: none;
 }
+#roofing-info-card p {
+  background-color: rgba(144, 143, 141, 0.8);
+}
+
 .infoText {
   padding: 30px;
+  z-index: 30;
 }
 .info-containers {
   position: relative;
@@ -94,6 +115,9 @@ $white: #fff;
   display: flex;
   width: 100%;
   height: auto;
+  background-image: url(../../images/roofing-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #service-container h1 {
   position: absolute;
@@ -107,7 +131,7 @@ $white: #fff;
   font-size: 24px;
   grid-template-rows: auto auto;
   justify-content: center;
-  align-items: center;;
+  align-items: center;
   width: 100%;
   height: 500px;
 }
@@ -116,52 +140,45 @@ $white: #fff;
   padding: 20px;
   width: 70%;
   height: auto;
-  min-width:100px;
-  text-align:center;
+  min-width: 100px;
+  text-align: center;
   margin: auto;
 }
-// .banner {
-//   width: auto;
-//   height: 37.5vmin;
-//   min-height: 15em;
-//   background: linear-gradient(#000, transparent, #000), var(--img) 50% / cover;
-//   background-attachment: fixed;
-//   background-blend-mode: multiply;
-
-//   &:nth-of-type(1) {
-//     --img: url("../../images/housePic.jpg");
-//   }
-
-//   &:nth-of-type(2) {
-//     --img: url("../../images/lumberSky.jpg");
-//   }
-
-//   &:nth-of-type(3) {
-//     --img: url("../../images/skyscraper.jpg");
-//   }
-// }
+.icons {
+  width: 40%;
+}
 
 @media screen and (max-width: 400px) {
   #about-us-card,
-  #roofing-info-card {
+  #roofing-info-card, 
+  .info-cards {
     grid-template-columns: none;
   }
   #infoAreaTitles-desktop {
     display: none;
   }
+  #who-we-are {
+    display: none;
+  }
   #infoAreaTitles-mobile {
     display: block;
-    color: $secondary;
     text-align: center;
-    font-size: 28px;
+    font-size: 38px;
+    color: rgb(255, 255, 255);
   }
   #about-us-card h1 {
     display: block;
+  }
+  .infoText {
+    margin-top: 10px;
   }
   #contact-us-button {
     right: 0vw;
     float: none;
     display: flex;
     justify-content: center;
+  }
+  #roofing-info-card {
+    font-size: 24px;
   }
 }

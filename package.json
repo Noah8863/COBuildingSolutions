@@ -21,6 +21,7 @@
     "flat-carousel": "^0.0.1",
     "hamburger-react": "^2.5.0",
     "react": "^17.0.1",
+    "react-background-video-player": "^1.1.8",
     "react-bootstrap": "^2.4.0",
     "react-bootstrap-dropdown": "^0.3.0",
     "react-bootstrap-dropdown-menu": "^1.1.23",
