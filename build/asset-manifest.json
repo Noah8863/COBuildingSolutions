@@ -1,24 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff091e2c.css",
-    "main.js": "/static/js/main.d17ae519.js",
-    "static/media/haulingLumber.jpg": "/static/media/haulingLumber.f65adf721ba91d577e2a.jpg",
-    "static/media/lumberLabor.jpg": "/static/media/lumberLabor.e1bafb09c245a1b44c0c.jpg",
-    "static/media/roofingHouse.jpg": "/static/media/roofingHouse.eff81ca26eab15d85f69.jpg",
+    "main.css": "/static/css/main.956a226f.css",
+    "main.js": "/static/js/main.6322f7d2.js",
+    "static/media/Winter-Banner.png": "/static/media/Winter-Banner.cb355065c6a35253c3a5.png",
+    "static/media/fork-lift-banner.jpg": "/static/media/fork-lift-banner.e20923ca9710229a9466.jpg",
     "static/media/manOnRoof.jpg": "/static/media/manOnRoof.bb04e18ac651463083ba.jpg",
-    "static/media/commericalRoof.jpg": "/static/media/commericalRoof.ead37b0ce5e6c093a1f8.jpg",
-    "static/media/housePic.jpg": "/static/media/housePic.2fea4762f0cf1bf96ba7.jpg",
-    "static/media/lumberPicture2.jpeg": "/static/media/lumberPicture2.fa8c599e992c650dcf4e.jpeg",
-    "static/media/skylight.jpg": "/static/media/skylight.b1a2955919fb1c4e5b7c.jpg",
-    "static/media/solarPanel.jpg": "/static/media/solarPanel.cd7647cd04089103177c.jpg",
-    "static/media/roofing.jpg": "/static/media/roofing.807e0b0b57812cb4ce2f.jpg",
-    "static/media/logo.jpg": "/static/media/logo.7531977701066c3f8155.jpg",
+    "static/media/house-with-roof-work.jpg": "/static/media/house-with-roof-work.7ddc57138c98cfc7fc68.jpg",
+    "static/media/Storm-Banner-edit.png": "/static/media/Storm-Banner-edit.3d157319c907388f18a0.png",
+    "static/media/Drone-Video-1.mp4": "/static/media/Drone-Video-1.f02aae65e083d14d540c.mp4",
+    "static/media/roofing-background.png": "/static/media/roofing-background.4457dd374158ffae3887.png",
+    "static/media/wood-background.png": "/static/media/wood-background.a4a37125afad6e222ab5.png",
+    "static/media/greenguard-img.png": "/static/media/greenguard-img.83db447c3ee77cc221f2.png",
+    "static/media/logo.png": "/static/media/logo.391c98e2af215925e956.png",
+    "static/media/UniversLightCondensed.ttf": "/static/media/UniversLightCondensed.e0853c12d4ca2f33f7fa.ttf",
+    "static/media/main-page-header1.jpg": "/static/media/main-page-header1.0c16bbcd773c41cf6ea5.jpg",
+    "static/media/USDA.png": "/static/media/USDA.de224557aa49b53764a6.png",
+    "static/media/tremcoLogo.jpeg": "/static/media/tremcoLogo.2dddd276be8a3da54013.jpeg",
+    "static/media/solar-icon.png": "/static/media/solar-icon.70346167698664f275ca.png",
+    "static/media/lumber-icon.png": "/static/media/lumber-icon.59dd7e8ba0614f80032b.png",
+    "static/media/roof-icon.png": "/static/media/roof-icon.725f6a0cd7af74c905ae.png",
+    "static/media/roof-inspection-icon.png": "/static/media/roof-inspection-icon.b25c4053dd22fd8064ec.png",
+    "static/media/skylight-icon.png": "/static/media/skylight-icon.4b0093a707da4cb4f3d5.png",
+    "static/media/gutter-icon.png": "/static/media/gutter-icon.4a63d1b92f22f03786a7.png",
     "index.html": "/index.html",
-    "main.ff091e2c.css.map": "/static/css/main.ff091e2c.css.map",
-    "main.d17ae519.js.map": "/static/js/main.d17ae519.js.map"
+    "main.956a226f.css.map": "/static/css/main.956a226f.css.map",
+    "main.6322f7d2.js.map": "/static/js/main.6322f7d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff091e2c.css",
-    "static/js/main.d17ae519.js"
+    "static/css/main.956a226f.css",
+    "static/js/main.6322f7d2.js"
   ]
 }
