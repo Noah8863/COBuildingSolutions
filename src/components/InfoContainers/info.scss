@@ -1,8 +1,9 @@
 .contact-us-btn {
   display: block;
   position: relative;
-  padding: 10px;
+  padding: 15px;
   top: 20px;
+  font-size: 24px;
   background-color: #fff;
   border-radius: 25px;
   margin: auto;
@@ -17,17 +18,13 @@
   padding: 20px;
   color: rgb(0, 0, 0);
   font-size: 24px;
-  background-color: grey;
-  z-index: 3;
-  // background-image: url(../../images/roofing-background.png);
-  // background-repeat: no-repeat;
-  // background-size: cover;
+  z-index: 1;  
 }
 .video {
-  position: fixed;
-  z-index: 1;
+  position: absolute;
+  z-index: 9;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .contact-us-button {
   position: relative;
@@ -37,13 +34,19 @@
 }
 #who-we-are {
   position: relative;
-  text-align: center;
+  display: flex;
   font-size: 55px;
-  // top: 5vh;
-  color: rgb(0, 0, 0);
-  border-right: 5px solid black;
+  justify-content: center;
 }
-
+.infoText {
+  position: relative;
+  left: 40%;
+  padding: 50px;
+  z-index: 30;
+  width: auto;
+  color: white;
+  background-color: rgba(144, 143, 141, 0.6);
+}
 #infoAreaTitles-desktop {
   position: relative;
   color: rgb(0, 0, 0);
@@ -59,12 +62,15 @@
   align-items: center;
   text-align:center;
   grid-template-columns: 40% 30%;
-  // padding: 20px;
   color: rgb(255, 255, 255);
   background-image: url(../../images/house-with-roof-work.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 800px;
+}
+#roofing-info-card {
+  position: relative;
+  background-color:red;
 }
 #infoAreaTitles-mobile {
   display: none;
@@ -72,10 +78,11 @@
 #roofing-info-card p {
   background-color: rgba(144, 143, 141, 0.8);
 }
-
-.infoText {
+.infoRoofText{
   padding: 30px;
   z-index: 30;
+  color: white;
+  background-color: rgba(144, 143, 141, 0.6);
 }
 .info-containers {
   position: relative;
@@ -110,6 +117,7 @@
   align-items: center;
   text-align: center;
 }
+
 #service-container {
   position: relative;
   display: flex;
@@ -170,7 +178,9 @@
     display: block;
   }
   .infoText {
-    margin-top: 10px;
+    width: 100%;
+    left: 0%;
+    padding: 10px;
   }
   #contact-us-button {
     right: 0vw;
@@ -180,5 +190,29 @@
   }
   #roofing-info-card {
     font-size: 24px;
+  }
+  .infoRoofText{
+    background-color: rgba(144, 143, 141, 0.7);
+  }
+  .info-cards {
+    position: relative;
+    width: 100%;
+    background-color: rgba(144, 143, 141, 0.7);
+  }
+  .info-containers {
+    padding: 10px;
+  }
+  .card-header {
+    border-right: none;
+    // border-bottom: 3px solid black;
+    //TODO: Ask about border style
+  }
+  #service-container-grid {
+    grid-template-columns: auto auto;
+    font-size:24px;
+    height: auto;
+  }
+  .icons {
+    width: 30%;
   }
 }

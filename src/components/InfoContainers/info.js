@@ -1,5 +1,5 @@
 import React from "react";
-import ContactButton from "../ContactButton/contactButton";
+// import ContactButton from "../ContactButton/contactButton";
 import VideoPlayer from "react-background-video-player";
 import { Link } from "react-router-dom";
 import "./info.scss";
@@ -16,20 +16,14 @@ function textInfo() {
     <main className="infoArea">
       <div id="about-us-container">
         <div id="about-us-card">
-          <h1 id="who-we-are">WHO WE ARE</h1>
-          {/* <video autoPlay muted loop id="backgroundVideo">
-            <source src={backgroundVideo} type="video/mp4" />
-              Your browser does not support HTML5 video.
-          </video> */}
           <VideoPlayer
             className="video"
-            src={
-              backgroundVideo
-            }
+            src={backgroundVideo}
             autoPlay={true}
             muted={true}
           />
           <p className="infoText">
+          <h1 id="who-we-are">WHO WE ARE</h1>
             Established in 2017 Colorado Building Solutions serves as a leading
             commercial and residential roofing company. We offer roofing
             services like roof repair, replacements, gutter cleaning, skylight
@@ -51,7 +45,7 @@ function textInfo() {
       </div>
       <div id="roofing-info-container">
         <div id="roofing-info-card">
-          <p className="infoText">
+          <div className="infoRoofText">
             <h1 id="infoAreaTitles-mobile">ROOFING SERVICES</h1>
             Looking for a reliable contractor with extensive experience for your
             next project? At Colorado Building Solutions, we stand by the
@@ -69,8 +63,8 @@ function textInfo() {
             <Link to="/quote">
               <button className="contact-us-btn">Get A Quote!</button>
             </Link>
-          </p>
-          <h1 id="infoAreaTitles-desktop">ROOFING SERVICES</h1>
+            <h1 id="infoAreaTitles-desktop">ROOFING SERVICES</h1> 
+          </div>
         </div>
       </div>
       <div className="info-containers">
