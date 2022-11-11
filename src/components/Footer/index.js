@@ -5,7 +5,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import StarIcon from "@mui/icons-material/Star";
 import CabinIcon from '@mui/icons-material/Cabin';
 import ForestIcon from '@mui/icons-material/Forest';
-import footerLogo from "../../images/CBSL-Footer-logo-white.png";
+import footerLogo from "../../images/logo.png";
 
 function Footer() {
   const links = [

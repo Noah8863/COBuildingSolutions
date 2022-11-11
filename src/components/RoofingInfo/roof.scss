@@ -1,0 +1,56 @@
+#working-with-us {
+    background-image: url(../../images/manOnRoof.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px;
+}
+#working-with-us-container {
+    position: relative;
+    color: white; 
+    padding: 120px;
+}
+#working-with-us-container h1 {
+    font-size: 38px;
+    width: 70%;
+    text-align: right;
+    margin: auto;
+}
+#working-with-us-container p {
+    font-size:24px;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+}
+.contact-us-btn-roof {
+    display: flex;
+    position: relative;
+    padding: 10px;
+    font-size: 24px;
+    background-color: #fff;
+    border-radius: 25px;
+    margin: auto;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #working-with-us {
+        padding: 0px;
+    }
+    #working-with-us-container {
+        padding: 20px;
+        background-color:rgba(81, 81, 81, 0.4);
+    }
+    #working-with-us-container h1 {
+        font-size: 38px;
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+    #working-with-us-container p {
+        font-size:24px;
+        padding: 10px;
+        width: 100%;
+        margin: auto;
+    }
+}
+

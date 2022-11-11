@@ -3,6 +3,7 @@ import './App.scss';
 import NavBar from './components/NavBar/index'
 import Quote from './components/Contact/index'
 import Info from './components/InfoContainers/info'
+import RoofingInfo from './components/RoofingInfo/index'
 import Footer from './components/Footer/index'
 import ContactContainer from './components/ContactContainer/index'
 import Certificate from './components/Certification';
@@ -20,7 +21,8 @@ function App() {
                 </Route>
                 <Route exact path="/services">
                     <Carousel />
-                    <Info /> 
+                    <RoofingInfo />
+                    {/* <Info />  */}
                 </Route>
                 <Route exact path="/quote">
                     <Quote />
