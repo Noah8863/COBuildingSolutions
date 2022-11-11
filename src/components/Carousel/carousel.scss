@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     width: auto;
-    max-height: 700px;
+    max-height: 650px;
 }
 .carousel-images {
     position: relative;
@@ -11,11 +11,4 @@
     margin: auto;
     width: 100%;
     z-index: 1;
-}
-#test-button {
-    position: absolute;
-    background-color: #0f70b8;
-    width: 200px;
-    height: 200px;
-    z-index: 5;
 }

@@ -9,7 +9,7 @@ import skylightIcon from "../../Icons/skylight-icon.png";
 import roofInspectionIcon from "../../Icons/roof-inspection-icon.png";
 import solarIcon from "../../Icons/solar-icon.png";
 import lumberIcon from "../../Icons/lumber-icon.png";
-import backgroundVideo from "../../Videos/Drone-Video.mp4";
+import backgroundVideo from "../../Videos/Drone-Video-1.mp4";
 
 function textInfo() {
   return (
