@@ -3,9 +3,9 @@ import "./footer.scss";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import StarIcon from "@mui/icons-material/Star";
-import CabinIcon from '@mui/icons-material/Cabin';
 import ForestIcon from '@mui/icons-material/Forest';
 import footerLogo from "../../images/logo.png";
+//TODO: Talk about the white CBS logo
 
 function Footer() {
   const links = [

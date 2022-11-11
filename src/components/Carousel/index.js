@@ -25,8 +25,8 @@ function Carousel() {
     >
       <SwiperSlide><img className="carousel-images" alt="winter-is-coming" src={winterBanner} /></SwiperSlide>
       <SwiperSlide><img className="carousel-images" alt="winter-is-coming" src={stormBanner} /></SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
+      {/* <SwiperSlide>Slide 3</SwiperSlide>
+      <SwiperSlide>Slide 4</SwiperSlide> */}
     </Swiper>
   );
 }
