@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Colorado Building Solutions
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Project Version][version-image]][version-url]
+[![Frontend][Frontend-image]][Frontend-url]
 
-## Available Scripts
 
-In the project directory, you can run:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d38e6869-3269-4388-97dd-d9b4fc73e57a/deploy-status)](https://app.netlify.com/sites/illustrious-puffpuff-979c2b/deploys)
 
-### `npm start`
+This is a front-end only eCommerce website created for a local business called "Colorado Building Solutions". This is the parent company for CBS-Lumber which I also developed and worked on. The project was worked on over a few months with multiple style overhauls and complete file/folder restructure with the introduction to React. The client and I worked with a UX designer named Tess Welch who came up with the final designs for the website. We all used a series of tools like Canva, Google Drive, Trello, and Email to communicate with each other and share ideas. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live deployed URL
+[Colorado Building Solutions](http://coloradobuildingsolutions.com/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
+## The Team
 
-### `npm test`
+**Developer** 
+* [Noah Hoffman](https://www.linkedin.com/in/noah-hoffman-9975a7121/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Designer/UX**
+* [Tess Welch](https://www.linkedin.com/in/tess-welch-a61814122/) 
 
-### `npm run build`
+## Showcase
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Main Landing Page
+![CBS-Github1](https://user-images.githubusercontent.com/60634270/201246943-c61f4ac0-3672-4877-a674-c75c78eea0f5.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Roofing Service Page
+![CBS-Github2](https://user-images.githubusercontent.com/60634270/201246974-9627c5a7-564f-449e-8b9c-f00803a458d7.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Contact Page
+![CBS-Github3](https://user-images.githubusercontent.com/60634270/201247001-75c0d7a7-0d3a-428f-98bc-5176b628cf52.png)
 
-### `npm run eject`
+## Orginal Wireframe 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### This is what the orginal idea for the "Who We Are" container which was changed to have a video in the background
+![Overview](https://user-images.githubusercontent.com/60634270/201247729-50d178e9-4fcd-47e9-8930-1c73b6405b81.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Orginal idea for the skill section
+![Selling Points](https://user-images.githubusercontent.com/60634270/201247241-b7220ecf-4689-4406-9a58-e01e2ad54b7f.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Orginal idea for the Contact Page which we ended up changing to keep the two websites cohesive
+![Projects](https://user-images.githubusercontent.com/60634270/201247399-e01620bb-76a1-42ba-8659-8d2d69f180a9.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Built With
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* [React.js](https://reactjs.org/) - For component building and over all structure
+* [Javascript](https://www.javascript.com/) - Being the logic behind certian components
+* [Framer-Motion](https://www.framer.com/motion/) - Animation library
+* [SCSS](https://sass-lang.com/) - For styling
+* [EmailJS](https://sass-lang.com/) - For email sending on contact page
+* [Netlify](https://www.netlify.com/?utm_source=google&utm_medium=paid_search&utm_campaign=12755510784&adgroup=118788138897&utm_term=netlify&utm_content=kwd-371509120223&creative=514583565825&device=c&matchtype=e&location=9028776&gclid=CjwKCAjws--ZBhAXEiwAv-RNL6XfigYndRl4TKQVJSai3OwBRYdwr3gyuMDqftDeFlbvhg81z3a3cxoCnnQQAvD_BwE) - To deploy on Netlify
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- Markdown link & img dfn's -->
 
-### Analyzing the Bundle Size
+[header-url]: github-template.png
+[header-link]: https://github.com/alexandrerosseto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+[cloud-provider-url]: https://wbshopping.herokuapp.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[linkedin-url]: https://www.linkedin.com/in/noah-hoffman-9975a7121/
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[version-image]: https://img.shields.io/badge/Version-1.0.0-brightgreen?style=for-the-badge&logo=appveyor
+[version-url]: https://img.shields.io/badge/version-1.0.0-green
+[Frontend-image]: https://img.shields.io/badge/Frontend-React.js-blue?style=for-the-badge
+[Frontend-url]: https://img.shields.io/badge/Frontend-React.JS-blue?style=for-the-badge
+[Backend-image]: https://img.shields.io/badge/Backend-Node.JS-important?style=for-the-badge
+[Backend-url]: https://img.shields.io/badge/Backend-Node.JS-important?style=for-the-badge
