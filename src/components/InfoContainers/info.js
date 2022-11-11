@@ -1,6 +1,5 @@
 import React from "react";
 // import ContactButton from "../ContactButton/contactButton";
-import VideoPlayer from "react-background-video-player";
 import { Link } from "react-router-dom";
 import "./info.scss";
 import roofIcon from "../../Icons/roof-icon.png";
@@ -16,12 +15,9 @@ function textInfo() {
     <main className="infoArea">
       <div id="about-us-container">
         <div id="about-us-card">
-          <VideoPlayer
-            className="video"
-            src={backgroundVideo}
-            autoPlay={true}
-            muted={true}
-          />
+          <video autoPlay loop muted className="video">
+            <source src={backgroundVideo}></source>
+          </video>
           <p className="infoText">
           <h1 id="who-we-are">WHO WE ARE</h1>
             Established in 2017 Colorado Building Solutions serves as a leading

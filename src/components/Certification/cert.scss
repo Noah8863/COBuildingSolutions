@@ -8,7 +8,7 @@
 #cert-card {
     position: relative;
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 30% 30% 30%;
     padding: 20px;
     color: white;
     text-align: center;
@@ -23,7 +23,7 @@
 }
 #cert-imgs {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     align-items: center;
 }
 #greenguard-img {
@@ -32,6 +32,10 @@
 }
 #usda-img {
     margin: 20px;
+    width: 100%;
+}
+#tremco-img {
+    margin-left: 5vw;
     width: 100%;
 }
 
@@ -48,5 +52,23 @@
         font-size: 32px;
         border-right: none;
         border-bottom: 3px solid white;
+    }
+    #cert-imgs {
+        grid-template-columns: none;
+    }
+    #greenguard-img {
+        margin: 20px;
+        width: 30%;
+        margin: 10px auto auto auto;
+    }
+    #usda-img {
+        margin: 20px;
+        width: 60%;
+        margin: 10px auto auto auto;
+    }
+    #tremco-img {
+        margin-left: 5vw;
+        width: 60%;
+        margin: 10px auto auto auto;
     }
 }

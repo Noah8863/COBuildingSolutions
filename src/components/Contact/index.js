@@ -1,14 +1,9 @@
 import React from "react";
 import "./contact.scss";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
-import EmailIcon from "@mui/icons-material/Email";
 import emailjs from "@emailjs/browser";
 import Certification from "../Certification/index";
 
-const clientName = document.getElementById("name");
-const email = document.getElementById("email");
-const subject = document.getElementById("subject");
-const message = document.getElementById("message");
 
 function Contact() {
   const sendEmail = (e) => {
@@ -64,7 +59,7 @@ function Contact() {
             </p>
             <p>
               Leave your information or give us a call, and we'll help fulfill
-              your lumber needs.
+              your building needs.
             </p>
             <a id="contact-phone-number" href="tel:7207561299">
               <PhoneInTalkIcon className="contact-icons" />
