@@ -156,7 +156,7 @@
   width: 40%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1200px) {
   #about-us-card,
   #roofing-info-card, 
   .info-cards {
@@ -208,11 +208,17 @@
     //TODO: Ask about border style
   }
   #service-container-grid {
+    //TODO: Ask if we want all vertical alignment or not
+    //grid-template-columns: none;
     grid-template-columns: auto auto;
     font-size:24px;
     height: auto;
+    padding-top: 80px;
   }
   .icons {
     width: 30%;
+  }
+  #our-services-header {
+    text-align: center;
   }
 }

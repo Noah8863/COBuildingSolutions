@@ -90,8 +90,8 @@ function textInfo() {
         </div>
       </div>
       <div id="service-container">
-        <h1>OUR SERVICES</h1>
         <div id="service-container-grid">
+        <h1 id="our-services-header">OUR SERVICES</h1>
           <div className="service-items">
             <img className="icons" src={roofIcon} alt="Roofing Icon" />
             <h5>Roofing</h5>
