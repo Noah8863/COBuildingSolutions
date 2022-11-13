@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.scss";
 import logo from "../../images/logo.png";
-import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+// import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 
 function NavBar() {
   return (
