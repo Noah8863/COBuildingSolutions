@@ -4,7 +4,7 @@ import "./navbar.scss";
 import logo from "../../images/logo.png";
 // import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 
-function NavBar() {
+function Navbar() {
   return (
     <div id="navbar-container">
       <nav id="navbar">
@@ -51,4 +51,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default Navbar;
