@@ -56,10 +56,10 @@ function textInfo() {
             here for you to help cover your investments. If you’re looking for
             professional roof replacement services, we are the experts in the
             field.
+            <h1 id="infoAreaTitles-desktop">ROOFING SERVICES</h1>
             <Link to="/quote">
               <button className="contact-us-btn">Get A Quote!</button>
-            </Link>
-            <h1 id="infoAreaTitles-desktop">ROOFING SERVICES</h1> 
+            </Link> 
           </div>
         </div>
       </div>
