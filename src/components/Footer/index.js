@@ -52,7 +52,7 @@ function Footer() {
         <div>
           <h3 className="footerHeaders">Office Hours</h3>
           <p>8:00am - 3:00pm</p>
-          <p>* NO in person walkins *</p>
+          <p>* NO in person walk-ins *</p>
         </div>
         <div id="addressContainer">
           <h3 className="footerHeaders">Address</h3>
@@ -60,13 +60,6 @@ function Footer() {
           <p>Englewood, CO 80110</p>
           <p>USA</p>
         </div>
-
-        {/* <div id="infoContainer">
-          <h3 className="footerHeaders">Contact</h3>
-          <p>Cobuildingsolutions@gmail.com</p>
-          <p>Gschendel@cobuildingsolutions.com</p>
-          <p>(720) 607-6890</p>
-        </div> */}
         <div id="contactContainer">
           <h3 className="footerHeaders">More About Us</h3>
           <ul className="wrapper">
@@ -87,20 +80,6 @@ function Footer() {
           </ul>
         </div>
       </div>
-      {/* <div id="creator">
-        <p style={{ color: "black" }}>
-          Proudly Created by{" "}
-          <a
-            href="https://github.com/Noah8863"
-            style={{ color: "black" }}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
-            Noah Hoffman{" "}
-          </a>
-        </p>
-      </div> */}
     </div>
   );
 }
