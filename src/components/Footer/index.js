@@ -4,8 +4,8 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import StarIcon from "@mui/icons-material/Star";
 import ForestIcon from '@mui/icons-material/Forest';
-import footerLogo from "../../images/logo.png";
-//TODO: Talk about the white CBS logo
+import footerLogo from "../../images/SmallLogoBW.png";
+
 
 function Footer() {
   const links = [
@@ -47,7 +47,7 @@ function Footer() {
     <div className="footer">
       <div className="contactInfo">
         <div id="logoContainer">
-          <img src={footerLogo} id="footerLogo" alt="footerLogo" />
+          <img src={footerLogo} id="footerLogo" alt="White CBS-Logo" />
         </div>
         <div>
           <h3 className="footerHeaders">Office Hours</h3>

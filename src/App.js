@@ -22,7 +22,6 @@ function App() {
                 <Route exact path="/services">
                     <Carousel />
                     <RoofingInfo />
-                    {/* <Info />  */}
                 </Route>
                 <Route exact path="/quote">
                     <Quote />

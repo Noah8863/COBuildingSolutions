@@ -1,5 +1,4 @@
 import React from "react";
-// import ContactButton from "../ContactButton/contactButton";
 import { Link } from "react-router-dom";
 import "./info.scss";
 import roofIcon from "../../Icons/roof-icon.png";
@@ -16,9 +15,9 @@ function textInfo() {
       <div id="about-us-container">
         <div id="about-us-card">
           <video autoPlay loop muted className="video">
-            <source src={backgroundVideo}></source>
+            <source src={backgroundVideo} alt="background drone video"></source>
           </video>
-          <p className="infoText">
+          <div className="infoText">
           <h1 id="who-we-are">WHO WE ARE</h1>
             Established in 2017 Colorado Building Solutions serves as a leading
             commercial and residential roofing company. We offer roofing
@@ -36,7 +35,7 @@ function textInfo() {
             <Link to="/quote">
               <button className="contact-us-btn">Contact Us</button>
             </Link>
-          </p>
+          </div>
         </div>
       </div>
       <div id="roofing-info-container">
@@ -131,10 +130,6 @@ function textInfo() {
             <p>Certified and Experinced</p>
           </div>
         </div>
-        {/*TODO: may need to set some ids for special styles here */}
-        {/* <Link to="/quote">
-          <button className="contact-us-btn">Contact Us</button>
-        </Link> */}
       </div>
     </main>
   );

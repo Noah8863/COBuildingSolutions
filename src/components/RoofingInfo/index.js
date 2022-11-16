@@ -1,8 +1,6 @@
 import React from "react";
 import "./roof.scss";
-
 import { Link } from "react-router-dom";
-
 import roofIcon from "../../Icons/roof-icon.png";
 import gutterIcon from "../../Icons/gutter-icon.png";
 import skylightIcon from "../../Icons/skylight-icon.png";
